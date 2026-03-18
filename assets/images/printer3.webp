@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+      <link rel="preconnect" href="https://api.gj.img.luckjingle.com" crossorigin>
+      <link rel="preconnect" href="https://api.website.luckjingle.luckprint.com/" crossorigin>
+      <link rel="icon" type="image/svg+xml" href="/logo.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="referrer" content="strict-origin-when-cross-origin">
+      <meta http-equiv="X-Content-Type-Options" content="nosniff">
+      <meta name="google-site-verification" content="veMRNcj7kIlb2wVO1wzQFCk7x6NgwFYOgFJAQ8ZA2jw" />
+      <title>LuckJingle |Portable Thermal Printer| Label Printer</title>
+    <script type="module" crossorigin src="/assets/index-DeOqYrWJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DPnfxPzt.css">
+  </head>
+
+  <!-- 在引入外部JS的HTML文件中 -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WZM4LG98KE"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WZM4LG98KE');
+  </script>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>

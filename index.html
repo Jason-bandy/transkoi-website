@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransKoi 锦鲤翻译 - AI 实时翻译，连接世界</title>
+    <meta name="description" content="TransKoi 锦鲤翻译 - 下一代 AI 实时翻译解决方案。支持电影、电话、对话实时翻译，打破语言障碍，连接全世界。">
+    <meta name="keywords" content="翻译，AI 翻译，实时翻译，锦鲤翻译，TransKoi, LuckyPod, 智能翻译，跨语言沟通">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        :root {
+            /* 主色调 - 科技蓝紫渐变 */
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            
+            /* 颜色变量 */
+            --primary: #667eea;
+            --primary-dark: #5a67d8;
+            --secondary: #764ba2;
+            --accent: #4facfe;
+            --dark-bg: #0a0e1a;
+            --darker-bg: #050810;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --text-primary: #ffffff;
+            --text-secondary: #a0aec0;
+            --text-muted: #718096;
+            
+            /* 阴影 */
+            --shadow-glow: 0 0 40px rgba(102, 126, 234, 0.3);
+            --shadow-card: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* 背景动画 */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: var(--dark-bg);
+            overflow: hidden;
+        }
+        
+        .bg-animation::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
+            animation: rotate 30s linear infinite;
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* 导航栏 */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(20px);
+            background: rgba(10, 14, 26, 0.8);
+            border-bottom: 1px solid var(--card-border);
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-gradient);
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .nav-cta {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: var(--shadow-glow);
+        }
+        
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 60px rgba(102, 126, 234, 0.5);
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 5% 80px;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 1200px;
+            text-align: center;
+            z-index: 1;
+        }
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease;
+        }
+        
+        .hero-badge i {
+            color: #fbbf24;
+        }
+        
+        .hero h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
+        
+        .hero h1 .gradient {
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            animation: fadeInUp 0.8s ease 0.4s both;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 0.6s both;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background: var(--primary-gradient);
+            color: white;
+            box-shadow: var(--shadow-glow);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 60px rgba(102, 126, 234, 0.5);
+        }
+        
+        .btn-secondary {
+            background: var(--card-bg);
+            color: var(--text-primary);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(10px);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--primary);
+        }
+        
+        /* 特性卡片 */
+        .features {
+            padding: 100px 5%;
+            background: var(--darker-bg);
+        }
+        
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 80px;
+        }
+        
+        .section-tag {
+            display: inline-block;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .feature-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 2.5rem;
+            transition: all 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--primary-gradient);
+            transform: scaleX(0);
+            transition: transform 0.4s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-card);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+        
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+            background: var(--primary-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        
+        /* 数据展示 */
+        .stats {
+            padding: 80px 5%;
+            background: var(--primary-gradient);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stats::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: rotate 40s linear infinite;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        /* 产品展示 */
+        .products {
+            padding: 100px 5%;
+        }
+        
+        .product-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .product-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 30px;
+            padding: 3rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s;
+        }
+        
+        .product-card:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-glow);
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: var(--secondary-gradient);
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        .product-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 30px;
+            background: var(--accent-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 2rem;
+        }
+        
+        .product-card h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .product-card p {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+        
+        .product-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .product-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 0;
+            color: var(--text-secondary);
+        }
+        
+        .product-features li i {
+            color: #10b981;
+        }
+        
+        /* CTA Section */
+        .cta {
+            padding: 120px 5%;
+            text-align: center;
+            background: var(--darker-bg);
+        }
+        
+        .cta-box {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 40px;
+            padding: 5rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.2) 0%, transparent 70%);
+            animation: rotate 30s linear infinite;
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta h2 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+        }
+        
+        /* Footer */
+        .footer {
+            padding: 80px 5% 40px;
+            background: var(--darker-bg);
+            border-top: 1px solid var(--card-border);
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr repeat(3, 1fr);
+            gap: 4rem;
+            max-width: 1400px;
+            margin: 0 auto 4rem;
+        }
+        
+        .footer-brand {
+            max-width: 350px;
+        }
+        
+        .footer-brand .logo {
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-brand p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-links a {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: var(--primary-gradient);
+            color: white;
+            border-color: transparent;
+        }
+        
+        .footer-links h4 {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--text-primary);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 3rem;
+            border-top: 1px solid var(--card-border);
+            color: var(--text-muted);
+        }
+        
+        /* 动画 */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .features-grid,
+            .product-showcase {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .cta-box {
+                padding: 3rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 背景动画 -->
+    <div class="bg-animation"></div>
+    
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="assets/images/logo.png" alt="TransKoi">
+            TransKoi
+        </a>
+        <ul class="nav-links">
+            <li><a href="#features">功能特点</a></li>
+            <li><a href="#products">产品服务</a></li>
+            <li><a href="#" onclick="showAboutModal()">关于我们</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ul>
+        <a href="#download" class="nav-cta">立即下载</a>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-sparkles"></i>
+                <span>新一代 AI 翻译技术</span>
+            </div>
+            <h1>
+                打破语言障碍<br>
+                <span class="gradient">连接全世界</span>
+            </h1>
+            <p>
+                TransKoi 锦鲤翻译 - 采用最先进的 AI 神经网络翻译技术，提供实时、准确、自然的跨语言沟通体验。
+                无论是观影、通话还是日常对话，都能让您畅行无阻。
+            </p>
+            <div class="hero-buttons">
+                <a href="#download" class="btn btn-primary">
+                    <i class="fas fa-download"></i>
+                    免费下载
+                </a>
+                <a href="#products" class="btn btn-secondary">
+                    <i class="fas fa-play-circle"></i>
+                    了解产品
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 功能特点 -->
+    <section class="features" id="features">
+        <div class="section-header">
+            <span class="section-tag">✨ 核心功能</span>
+            <h2 class="section-title">为什么选择 TransKoi？</h2>
+            <p class="section-subtitle">
+                融合前沿 AI 技术，打造极致的翻译体验
+            </p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-film"></i>
+                </div>
+                <h3>🎬 电影模式</h3>
+                <p>
+                    观看外语电影时实时显示翻译字幕，悬浮窗设计不遮挡画面。支持 Netflix、YouTube 等主流平台，
+                    让您不错过任何精彩情节。
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <h3>📞 电话翻译</h3>
+                <p>
+                    接听外语电话时自动翻译对方语音，实时显示对话内容。支持双向翻译，让您与外国朋友无障碍沟通。
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3>💬 AI 对话翻译</h3>
+                <p>
+                    与 AI 助手进行多语言对话练习，支持语音输入和输出。提升语言学习能力，让翻译更自然流畅。
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>⚡ 实时翻译</h3>
+                <p>
+                    基于神经网络的实时翻译引擎，翻译速度小于 100ms。支持 100+ 语言，准确率行业领先。
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>🔒 隐私保护</h3>
+                <p>
+                    所有翻译数据本地加密处理，可选离线模式。严格遵守 GDPR 隐私保护标准，您的数据安全有保障。
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h3>☁️ 云端同步</h3>
+                <p>
+                    翻译记录、常用短语云端同步，多设备无缝切换。VIP 用户享受无限云存储空间。
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 数据展示 -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">支持语言</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">500K+</div>
+                <div class="stat-label">活跃用户</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">99.5%</div>
+                <div class="stat-label">翻译准确率</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number"><100ms</div>
+                <div class="stat-label">响应速度</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 产品展示 -->
+    <section class="products" id="products">
+        <div class="section-header">
+            <span class="section-tag">🚀 产品矩阵</span>
+            <h2 class="section-title">我们的产品</h2>
+            <p class="section-subtitle">
+                从软件到硬件，全方位的翻译解决方案
+            </p>
+        </div>
+        <div class="product-showcase">
+            <!-- TransKoi App -->
+            <div class="product-card">
+                <div class="product-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>TransKoi App</h3>
+                <p>
+                    旗舰级 AI 翻译应用，集成所有核心功能。支持 iOS 和 Android 平台，提供流畅的跨语言沟通体验。
+                </p>
+                <ul class="product-features">
+                    <li><i class="fas fa-check-circle"></i> 电影/电话/AI 对话模式</li>
+                    <li><i class="fas fa-check-circle"></i> 100+ 语言支持</li>
+                    <li><i class="fas fa-check-circle"></i> 离线翻译包</li>
+                    <li><i class="fas fa-check-circle"></i> 语音输入输出</li>
+                    <li><i class="fas fa-check-circle"></i> 翻译历史记录</li>
+                </ul>
+                <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem;">
+                    <!-- iOS 下载 -->
+                    <a href="https://apps.apple.com/cn/app/锦鲤翻译/id6746327674" target="_blank" class="btn btn-primary" id="ios-download-btn-product">
+                        <i class="fab fa-apple"></i>
+                        <span>App Store 下载</span>
+                        <span id="ios-region-product" style="font-size: 0.85rem; opacity: 0.8; margin-left: 0.5rem;">(中国区)</span>
+                    </a>
+                    
+                    <!-- Android 下载 -->
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="https://play.google.com/store/apps/details?id=com.lujiang.transkoi" target="_blank" class="btn btn-secondary" style="flex: 1; justify-content: center;">
+                            <i class="fab fa-google-play"></i>
+                            Google Play
+                        </a>
+                        <a href="https://luckprint.oss-cn-beijing.aliyuncs.com/transkoi/transkoi.1.0.8.apk" target="_blank" class="btn btn-primary" style="flex: 1; justify-content: center;">
+                            <i class="fab fa-android"></i>
+                            APK 下载
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- LuckyPod -->
+            <div class="product-card">
+                <span class="product-badge">新品上市</span>
+                <div class="product-icon">
+                    <i class="fas fa-headphones"></i>
+                </div>
+                <h3>LuckyPod</h3>
+                <p>
+                    智能翻译耳机，硬件级翻译体验。内置 AI 芯片，支持实时语音翻译，让您与世界各地的人无障碍交流。
+                </p>
+                <ul class="product-features">
+                    <li><i class="fas fa-check-circle"></i> 内置 AI 翻译芯片</li>
+                    <li><i class="fas fa-check-circle"></i> 40 小时续航</li>
+                    <li><i class="fas fa-check-circle"></i> 双麦克风降噪</li>
+                    <li><i class="fas fa-check-circle"></i> 蓝牙 5.3 连接</li>
+                    <li><i class="fas fa-check-circle"></i> IPX5 防水</li>
+                </ul>
+                <a href="mailto:support@transkoi.com?subject=LuckyPod 产品咨询" class="btn btn-secondary">
+                    <i class="fas fa-info-circle"></i>
+                    产品咨询
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta" id="download">
+        <div class="cta-box">
+            <div class="cta-content">
+                <h2>准备好打破语言障碍了吗？</h2>
+                <p>
+                    立即下载 TransKoi，开启无障碍沟通新时代。
+                    免费版本永久可用，VIP 解锁更多高级功能。
+                </p>
+                <div class="hero-buttons" style="flex-direction: column; gap: 1rem;">
+                    <!-- iOS 下载 -->
+                    <a href="https://apps.apple.com/cn/app/锦鲤翻译/id6746327674" target="_blank" class="btn btn-primary" id="ios-download-btn">
+                        <i class="fab fa-apple"></i>
+                        <span>App Store 下载</span>
+                        <span id="ios-region" style="font-size: 0.85rem; opacity: 0.8; margin-left: 0.5rem;">(中国区)</span>
+                    </a>
+                    
+                    <!-- Android 下载 -->
+                    <div style="display: flex; gap: 1rem; width: 100%;">
+                        <a href="https://play.google.com/store/apps/details?id=com.lujiang.transkoi" target="_blank" class="btn btn-secondary" style="flex: 1; justify-content: center;">
+                            <i class="fab fa-google-play"></i>
+                            Google Play
+                        </a>
+                        <a href="https://luckprint.oss-cn-beijing.aliyuncs.com/transkoi/transkoi.1.0.8.apk" target="_blank" class="btn btn-primary" style="flex: 1; justify-content: center;">
+                            <i class="fab fa-android"></i>
+                            APK 下载
+                        </a>
+                    </div>
+                    
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">
+                        <i class="fas fa-info-circle"></i> 
+                        中国区用户推荐使用 App Store，海外用户自动切换到对应地区商店
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="assets/images/logo.png" alt="TransKoi">
+                </a>
+                <p>
+                    <strong>厦门智伽科技有限公司</strong><br>
+                    TransKoi 锦鲤翻译 - 用 AI 技术连接世界，让沟通没有障碍。
+                    我们致力于通过前沿的 AI 和硬件解决方案，为用户提供更智能、更便捷的生活和工作方式。
+                </p>
+                <div style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-secondary);">
+                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i>厦门市火炬高新区软件园二期观日路 18 号 403 室</p>
+                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-phone" style="margin-right: 0.5rem;"></i>152-8042-7319 (Hason)</p>
+                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>support@transkoi.com</p>
+                </div>
+                <div class="social-links" style="margin-top: 1.5rem;">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-weixin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>产品</h4>
+                <ul>
+                    <li><a href="#products">TransKoi App</a></li>
+                    <li><a href="#products">LuckyPod</a></li>
+                    <li><a href="#download">VIP 会员</a></li>
+                    <li><a href="#">企业版</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>支持</h4>
+                <ul>
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">使用教程</a></li>
+                    <li><a href="#">常见问题</a></li>
+                    <li><a href="mailto:support@transkoi.com">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>公司</h4>
+                <ul>
+                    <li><a href="#" onclick="showAboutModal()">关于我们</a></li>
+                    <li><a href="#">加入我们</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                    <li><a href="#">服务条款</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 厦门智伽科技有限公司 Xiamen Zhiplus Technology Co., Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // 导航栏滚动效果
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(10, 14, 26, 0.95)';
+            } else {
+                navbar.style.background = 'rgba(10, 14, 26, 0.8)';
+            }
+        });
+        
+        // 数字动画
+        const stats = document.querySelectorAll('.stat-number');
+        const animateStats = () => {
+            stats.forEach(stat => {
+                const rect = stat.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    stat.style.opacity = '1';
+                    stat.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        stats.forEach(stat => {
+            stat.style.opacity = '0';
+            stat.style.transform = 'translateY(20px)';
+            stat.style.transition = 'all 0.6s ease';
+        });
+        
+        window.addEventListener('scroll', animateStats);
+        animateStats();
+        
+        // 显示关于我们模态框
+        function showAboutModal() {
+            const modal = document.createElement('div');
+            modal.innerHTML = `
+                <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 9999; display: flex; align-items: center; justify-content: center;" onclick="this.parentElement.remove()">
+                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 3rem; border-radius: 24px; max-width: 600px; margin: 2rem; position: relative; box-shadow: 0 20px 60px rgba(0,0,0,0.5);" onclick="event.stopPropagation()">
+                        <button onclick="this.parentElement.parentElement.parentElement.remove()" style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; color: white; font-size: 2rem; cursor: pointer; line-height: 1;">&times;</button>
+                        <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: white;">厦门智伽科技有限公司</h2>
+                        <p style="color: rgba(255,255,255,0.9); line-height: 1.8; margin-bottom: 1.5rem;">
+                            Xiamen Zhiplus Technology Co., Ltd. 是一家专注于智能硬件和人工智能的创新型企业。
+                            我们致力于通过前沿技术，为用户创造更智能、更便捷的生活和工作方式。
+                        </p>
+                        <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem;">
+                            <p style="color: white; margin-bottom: 0.5rem;"><strong>核心产品：</strong></p>
+                            <ul style="color: rgba(255,255,255,0.9); margin-left: 1.5rem;">
+                                <li>锦鲤翻译 App - AI 实时翻译工具</li>
+                                <li>同声传译耳机 - 智能翻译硬件</li>
+                                <li>迷你口袋打印机 - 便携式打印解决方案</li>
+                                <li>智能标签打印机 - 高效办公助手</li>
+                            </ul>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 12px;">
+                            <p style="color: white; margin-bottom: 0.5rem;"><strong>联系我们：</strong></p>
+                            <p style="color: rgba(255,255,255,0.9);"><i class="fas fa-map-marker-alt"></i> 厦门市火炬高新区软件园二期观日路 18 号 403 室</p>
+                            <p style="color: rgba(255,255,255,0.9);"><i class="fas fa-phone"></i> 152-8042-7319 (Hason)</p>
+                            <p style="color: rgba(255,255,255,0.9);"><i class="fas fa-envelope"></i> support@transkoi.com</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        // 地区检测 - 自动切换 App Store 链接
+        function detectRegion() {
+            // 获取用户语言设置
+            const userLang = navigator.language || navigator.userLanguage;
+            const region = userLang.split('-')[1] || 'CN';
+            
+            // 定义不同地区的 App Store 链接
+            const appStoreLinks = {
+                'CN': { url: 'https://apps.apple.com/cn/app/锦鲤翻译/id6746327674', text: '(中国区)' },
+                'US': { url: 'https://apps.apple.com/us/app/transkoi/id6746327674', text: '(美国区)' },
+                'GB': { url: 'https://apps.apple.com/gb/app/transkoi/id6746327674', text: '(英国区)' },
+                'SG': { url: 'https://apps.apple.com/sg/app/transkoi/id6746327674', text: '(新加坡区)' },
+                'JP': { url: 'https://apps.apple.com/jp/app/transkoi/id6746327674', text: '(日本区)' },
+                'KR': { url: 'https://apps.apple.com/kr/app/transkoi/id6746327674', text: '(韩国区)' },
+                'DE': { url: 'https://apps.apple.com/de/app/transkoi/id6746327674', text: '(德国区)' },
+                'FR': { url: 'https://apps.apple.com/fr/app/transkoi/id6746327674', text: '(法国区)' },
+                'AU': { url: 'https://apps.apple.com/au/app/transkoi/id6746327674', text: '(澳大利亚区)' },
+                'CA': { url: 'https://apps.apple.com/ca/app/transkoi/id6746327674', text: '(加拿大区)' },
+            };
+            
+            // 默认中国区
+            const linkInfo = appStoreLinks[region] || appStoreLinks['CN'];
+            
+            // 更新所有 iOS 下载按钮
+            const iosBtns = document.querySelectorAll('[id^="ios-download-btn"]');
+            iosBtns.forEach(btn => {
+                if (btn) {
+                    btn.href = linkInfo.url;
+                }
+            });
+            
+            // 更新地区显示
+            const regionSpans = document.querySelectorAll('[id^="ios-region"]');
+            regionSpans.forEach(span => {
+                if (span) {
+                    span.textContent = linkInfo.text;
+                }
+            });
+            
+            console.log('Detected region:', region, 'App Store:', linkInfo.text);
+        }
+        
+        // 页面加载时检测地区
+        window.addEventListener('load', detectRegion);
+    </script>
+</body>
+</html>
