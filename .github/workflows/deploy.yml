@@ -1,0 +1,54 @@
+name: Deploy transkoi-website to Aliyun
+
+on:
+  push:
+    branches: [ main, master ]
+    tags: [ 'v*' ]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        cache-dependency-path: package-lock.json
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build
+      run: npm run build
+      env:
+        NEXT_TELEMETRY_DISABLED: 1
+
+    - name: Fix output structure
+      run: |
+        for locale in zh en ja; do
+          if [ -f "dist/$locale.html" ] && [ ! -d "dist/$locale" ]; then
+            mkdir -p "dist/$locale"
+            mv "dist/$locale.html" "dist/$locale/index.html"
+          fi
+        done
+
+    - name: Deploy to Aliyun via SSH
+      uses: easingthemes/ssh-deploy@v4
+      with:
+        SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
+        REMOTE_HOST: ${{ secrets.ALIYUN_HOST }}
+        REMOTE_USER: ${{ secrets.ALIYUN_USER }}
+        REMOTE_PORT: ${{ secrets.ALIYUN_PORT }}
+        SOURCE: "dist/"
+        TARGET: ${{ secrets.TRANSLATOR_TARGET_PATH }}
+        ARGS: "-avzr --delete"
+        SCRIPT_AFTER: |
+          cd ${{ secrets.TRANSLATOR_TARGET_PATH }}
+          chown -R www:www .
+          echo "TransKoi translator deployment completed at $(date)"

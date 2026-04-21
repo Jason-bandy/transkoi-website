@@ -1,0 +1,125 @@
+{
+  "TransKoi": {
+    "nav": {
+      "features": "功能特点",
+      "products": "产品服务",
+      "about": "关于我们",
+      "contact": "联系我们",
+      "download": "立即下载"
+    },
+    "hero": {
+      "badge": "新一代 AI 翻译技术",
+      "title": {
+        "part1": "打破语言障碍",
+        "part2": "连接全世界"
+      },
+      "description": "TransKoi 锦鲤翻译 - 采用最先进的 AI 神经网络翻译技术，提供实时、准确、自然的跨语言沟通体验。无论是观影、通话还是日常对话，都能让您畅行无阻。",
+      "downloadBtn": "免费下载",
+      "productsBtn": "了解产品"
+    },
+    "features": {
+      "tag": "✨ 核心功能",
+      "title": "为什么选择 TransKoi？",
+      "subtitle": "融合前沿 AI 技术，打造极致的翻译体验",
+      "feature1": {
+        "title": "🎬 电影模式",
+        "description": "观看外语电影时实时显示翻译字幕，悬浮窗设计不遮挡画面。支持 Netflix、YouTube 等主流平台，让您不错过任何精彩情节。"
+      },
+      "feature2": {
+        "title": "📞 电话翻译",
+        "description": "接听外语电话时自动翻译对方语音，实时显示对话内容。支持双向翻译，让您与外国朋友无障碍沟通。"
+      },
+      "feature3": {
+        "title": "💬 AI 对话翻译",
+        "description": "与 AI 助手进行多语言对话练习，支持语音输入和输出。提升语言学习能力，让翻译更自然流畅。"
+      },
+      "feature4": {
+        "title": "⚡ 实时翻译",
+        "description": "基于神经网络的实时翻译引擎，翻译速度小于 100ms。支持 100+ 语言，准确率行业领先。"
+      },
+      "feature5": {
+        "title": "🔒 隐私保护",
+        "description": "所有翻译数据本地加密处理，可选离线模式。严格遵守 GDPR 隐私保护标准，您的数据安全有保障。"
+      },
+      "feature6": {
+        "title": "☁️ 云端同步",
+        "description": "翻译记录、常用短语云端同步，多设备无缝切换。VIP 用户享受无限云存储空间。"
+      }
+    },
+    "stats": {
+      "languageCount": "100+",
+      "languages": "支持语言",
+      "userCount": "500K+",
+      "users": "活跃用户",
+      "accuracy": "99.5%",
+      "accuracyLabel": "翻译准确率",
+      "speed": "<100ms",
+      "responseSpeed": "响应速度"
+    },
+    "products": {
+      "tag": "🚀 产品矩阵",
+      "title": "我们的产品",
+      "subtitle": "从软件到硬件，全方位的翻译解决方案",
+      "app": {
+        "title": "TransKoi App",
+        "description": "旗舰级 AI 翻译应用，集成所有核心功能。支持 iOS 和 Android 平台，提供流畅的跨语言沟通体验。",
+        "features": [
+          "电影/电话/AI 对话模式",
+          "100+ 语言支持",
+          "离线翻译包",
+          "语音输入输出",
+          "翻译历史记录"
+        ],
+        "iosBtn": "App Store 下载"
+      },
+      "luckyPod": {
+        "badge": "新品上市",
+        "title": "LuckyPod",
+        "description": "智能翻译耳机，硬件级翻译体验。内置 AI 芯片，支持实时语音翻译，让您与世界各地的人无障碍交流。",
+        "features": [
+          "内置 AI 翻译芯片",
+          "40 小时续航",
+          "双麦克风降噪",
+          "蓝牙 5.3 连接",
+          "IPX5 防水"
+        ],
+        "contactBtn": "产品咨询"
+      }
+    },
+    "download": {
+      "title": "准备好打破语言障碍了吗？",
+      "description": "立即下载 TransKoi，开启无障碍沟通新时代。免费版本永久可用，VIP 解锁更多高级功能。",
+      "iosBtn": "App Store 下载",
+      "note": "中国区用户推荐使用 App Store，海外用户自动切换到对应地区商店"
+    },
+    "footer": {
+      "company": "厦门智伽科技有限公司",
+      "description": "TransKoi 锦鲤翻译 - 用 AI 技术连接世界，让沟通没有障碍。我们致力于通过前沿的 AI 和硬件解决方案，为用户提供更智能、更便捷的生活和工作方式。",
+      "address": "厦门市火炬高新区软件园二期观日路 18 号 403 室",
+      "phone": "152-8042-7319 (Hason)",
+      "email": "support@transkoi.com",
+      "copyright": "厦门智伽科技有限公司 Xiamen Zhiplus Technology Co., Ltd. All rights reserved.",
+      "products": {
+        "title": "产品",
+        "app": "TransKoi App",
+        "luckyPod": "LuckyPod",
+        "vip": "VIP 会员",
+        "enterprise": "企业版"
+      },
+      "support": {
+        "title": "支持",
+        "help": "帮助中心",
+        "tutorials": "使用教程",
+        "faq": "常见问题",
+        "contact": "联系我们"
+      },
+      "company": {
+        "title": "公司",
+        "about": "关于我们",
+        "careers": "加入我们",
+        "privacy": "隐私政策",
+        "terms": "服务条款"
+      }
+    }
+  }
+}

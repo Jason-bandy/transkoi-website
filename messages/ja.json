@@ -1,0 +1,125 @@
+{
+  "TransKoi": {
+    "nav": {
+      "features": "機能",
+      "products": "製品",
+      "about": "会社概要",
+      "contact": "お問い合わせ",
+      "download": "今すぐダウンロード"
+    },
+    "hero": {
+      "badge": "次世代 AI 翻訳技術",
+      "title": {
+        "part1": "言語の壁を突破",
+        "part2": "世界をつなぐ"
+      },
+      "description": "TransKoi 錦鯉翻訳 - 最先端の AI ニューラルネットワーク翻訳技術により、リアルタイムで正確かつ自然なクロスランゲージコミュニケーション体験を提供します。映画鑑賞、電話、日常会話など、あらゆるシーンでシームレスに沟通できます。",
+      "downloadBtn": "無料ダウンロード",
+      "productsBtn": "製品を知る"
+    },
+    "features": {
+      "tag": "✨ コア機能",
+      "title": "TransKoi を選ぶ理由",
+      "subtitle": "最先端の AI 技術を融合し、究極の翻訳体験を創造",
+      "feature1": {
+        "title": "🎬 映画モード",
+        "description": "外国語映画鑑賞時にリアルタイムで翻訳字幕を表示。画面を遮らないフローティングウィンドウ設計。Netflix、YouTube などの主要プラットフォームに対応。"
+      },
+      "feature2": {
+        "title": "📞 電話翻訳",
+        "description": "外国語の電話を自動的に翻訳し、会話内容をリアルタイム表示。双方向翻訳対応で、外国人の友人ともスムーズに沟通。"
+      },
+      "feature3": {
+        "title": "💬 AI 会話翻訳",
+        "description": "AI アシスタントと多言語会話練習。音声入出力対応で、語学力向上と自然な翻訳を実現。"
+      },
+      "feature4": {
+        "title": "⚡ リアルタイム翻訳",
+        "description": "ニューラルネットワークベースのリアルタイム翻訳エンジン。100ms 未満の遅延、100+ 言語対応、業界最高精度。"
+      },
+      "feature5": {
+        "title": "🔒 プライバシー保護",
+        "description": "すべての翻訳データはローカル暗号化処理。オフラインモード選択可能。GDPR プライバシー基準に準拠。"
+      },
+      "feature6": {
+        "title": "☁️ クラウド同期",
+        "description": "翻訳履歴と常用フレーズをクラウド同期。複数デバイスでシームレスに切り替え。VIP ユーザーは無制限クラウドストレージ。"
+      }
+    },
+    "stats": {
+      "languageCount": "100+",
+      "languages": "対応言語",
+      "userCount": "500K+",
+      "users": "アクティブユーザー",
+      "accuracy": "99.5%",
+      "accuracyLabel": "翻訳精度",
+      "speed": "<100ms",
+      "responseSpeed": "応答速度"
+    },
+    "products": {
+      "tag": "🚀 製品ライン",
+      "title": "私たちの製品",
+      "subtitle": "ソフトウェアからハードウェアまで、包括的な翻訳ソリューション",
+      "app": {
+        "title": "TransKoi アプリ",
+        "description": "すべてコア機能を統合したフラッグシップ AI 翻訳アプリ。iOS と Android 対応、シームレスなクロスランゲージコミュニケーション体験を提供。",
+        "features": [
+          "映画/電話/AI 会話モード",
+          "100+ 言語サポート",
+          "オフライン翻訳パック",
+          "音声入出力",
+          "翻訳履歴"
+        ],
+        "iosBtn": "App Store でダウンロード"
+      },
+      "luckyPod": {
+        "badge": "新発売",
+        "title": "LuckyPod",
+        "description": "スマート翻訳イヤホン、ハードウェアレベルの翻訳体験。AI チップ内蔵でリアルタイム音声翻訳対応。",
+        "features": [
+          "AI 翻訳チップ内蔵",
+          "40 時間バッテリー",
+          "デュアルマイクノイズキャンセリング",
+          "Bluetooth 5.3 接続",
+          "IPX5 防水"
+        ],
+        "contactBtn": "製品お問い合わせ"
+      }
+    },
+    "download": {
+      "title": "言語の壁を突破する準備はできましたか？",
+      "description": "今すぐ TransKoi をダウンロードして、バリアフリーコミュニケーションを始めましょう。無料版は永久利用可能、VIP でプレミアム機能解锁。",
+      "iosBtn": "App Store でダウンロード",
+      "note": "中国ユーザーは App Store を推奨、海外ユーザーは自動で地域ストアに切り替え"
+    },
+    "footer": {
+      "company": "廈門智伽科技有限公司",
+      "description": "TransKoi 錦鯉翻訳 - AI 技術で世界をつなぎ、コミュニケーションをバリアフリーに。最先端の AI とハードウェアソリューションで、ユーザーによりスマートで便利なライフスタイルを提供します。",
+      "address": "廈門市火炬高新区軟件園二期観日路 18 号 403 室",
+      "phone": "152-8042-7319 (Hason)",
+      "email": "support@transkoi.com",
+      "copyright": "廈門智伽科技有限公司 Xiamen Zhiplus Technology Co., Ltd. All rights reserved.",
+      "products": {
+        "title": "製品",
+        "app": "TransKoi アプリ",
+        "luckyPod": "LuckyPod",
+        "vip": "VIP メンバーシップ",
+        "enterprise": "企業版"
+      },
+      "support": {
+        "title": "サポート",
+        "help": "ヘルプセンター",
+        "tutorials": "チュートリアル",
+        "faq": "よくある質問",
+        "contact": "お問い合わせ"
+      },
+      "company": {
+        "title": "会社",
+        "about": "会社概要",
+        "careers": "採用情報",
+        "privacy": "プライバシーポリシー",
+        "terms": "利用規約"
+      }
+    }
+  }
+}

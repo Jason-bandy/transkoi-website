@@ -1,0 +1,125 @@
+{
+  "TransKoi": {
+    "nav": {
+      "features": "Features",
+      "products": "Products",
+      "about": "About Us",
+      "contact": "Contact",
+      "download": "Download Now"
+    },
+    "hero": {
+      "badge": "Next-Gen AI Translation Technology",
+      "title": {
+        "part1": "Break Language Barriers",
+        "part2": "Connect the World"
+      },
+      "description": "TransKoi - Powered by advanced AI neural network translation technology, providing real-time, accurate, and natural cross-language communication experience. Whether watching movies, making calls, or daily conversations, you can communicate seamlessly.",
+      "downloadBtn": "Download Free",
+      "productsBtn": "Learn More"
+    },
+    "features": {
+      "tag": "✨ Core Features",
+      "title": "Why Choose TransKoi?",
+      "subtitle": "Combining cutting-edge AI technology to create the ultimate translation experience",
+      "feature1": {
+        "title": "🎬 Movie Mode",
+        "description": "Real-time translation subtitles when watching foreign films with floating window design that doesn't block the screen. Supports Netflix, YouTube and other mainstream platforms."
+      },
+      "feature2": {
+        "title": "📞 Phone Translation",
+        "description": "Automatically translates foreign language calls with real-time conversation display. Supports bidirectional translation for seamless communication with international friends."
+      },
+      "feature3": {
+        "title": "💬 AI Conversation",
+        "description": "Practice multilingual conversations with AI assistant, supporting voice input and output. Enhance language learning with natural and fluent translation."
+      },
+      "feature4": {
+        "title": "⚡ Real-time Translation",
+        "description": "Neural network-based real-time translation engine with less than 100ms latency. Supports 100+ languages with industry-leading accuracy."
+      },
+      "feature5": {
+        "title": "🔒 Privacy Protection",
+        "description": "All translation data is locally encrypted with optional offline mode. Strictly complies with GDPR privacy standards to ensure your data security."
+      },
+      "feature6": {
+        "title": "☁️ Cloud Sync",
+        "description": "Sync translation history and common phrases across devices. VIP users enjoy unlimited cloud storage."
+      }
+    },
+    "stats": {
+      "languageCount": "100+",
+      "languages": "Languages Supported",
+      "userCount": "500K+",
+      "users": "Active Users",
+      "accuracy": "99.5%",
+      "accuracyLabel": "Translation Accuracy",
+      "speed": "<100ms",
+      "responseSpeed": "Response Time"
+    },
+    "products": {
+      "tag": "🚀 Product Line",
+      "title": "Our Products",
+      "subtitle": "Comprehensive translation solutions from software to hardware",
+      "app": {
+        "title": "TransKoi App",
+        "description": "Flagship AI translation app with all core features. Available on iOS and Android, providing seamless cross-language communication experience.",
+        "features": [
+          "Movie/Phone/AI Conversation Modes",
+          "100+ Language Support",
+          "Offline Translation Packs",
+          "Voice Input & Output",
+          "Translation History"
+        ],
+        "iosBtn": "Download on App Store"
+      },
+      "luckyPod": {
+        "badge": "New Arrival",
+        "title": "LuckyPod",
+        "description": "Smart translation earbuds with hardware-level translation experience. Built-in AI chip supports real-time voice translation for seamless global communication.",
+        "features": [
+          "Built-in AI Translation Chip",
+          "40-Hour Battery Life",
+          "Dual-Mic Noise Cancellation",
+          "Bluetooth 5.3 Connection",
+          "IPX5 Water Resistant"
+        ],
+        "contactBtn": "Product Inquiry"
+      }
+    },
+    "download": {
+      "title": "Ready to Break Language Barriers?",
+      "description": "Download TransKoi now and start barrier-free communication. Free version available forever, VIP unlocks premium features.",
+      "iosBtn": "Download on App Store",
+      "note": "Users in China recommend App Store, overseas users auto-switch to regional stores"
+    },
+    "footer": {
+      "company": "Xiamen Zhiplus Technology Co., Ltd.",
+      "description": "TransKoi - Connecting the world with AI technology, making communication barrier-free. We are committed to providing users with smarter and more convenient lifestyles through cutting-edge AI and hardware solutions.",
+      "address": "Room 403, No. 18, Guanri Road, Software Park Phase II, Xiamen Torch High-tech Zone",
+      "phone": "152-8042-7319 (Hason)",
+      "email": "support@transkoi.com",
+      "copyright": "Xiamen Zhiplus Technology Co., Ltd. All rights reserved.",
+      "products": {
+        "title": "Products",
+        "app": "TransKoi App",
+        "luckyPod": "LuckyPod",
+        "vip": "VIP Membership",
+        "enterprise": "Enterprise"
+      },
+      "support": {
+        "title": "Support",
+        "help": "Help Center",
+        "tutorials": "Tutorials",
+        "faq": "FAQ",
+        "contact": "Contact Us"
+      },
+      "company": {
+        "title": "Company",
+        "about": "About Us",
+        "careers": "Careers",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
+      }
+    }
+  }
+}
