@@ -32,11 +32,13 @@ jobs:
     - name: Fix output structure
       run: |
         for locale in zh en ja; do
-          if [ -f "dist/$locale.html" ] && [ ! -d "dist/$locale" ]; then
-            mkdir -p "dist/$locale"
-            mv "dist/$locale.html" "dist/$locale/index.html"
+          if [ -f "dist/$locale.html" ]; then
+            mkdir -p "translator/$locale"
+            cp "dist/$locale.html" "translator/$locale/index.html"
           fi
         done
+        cp -r dist/_next translator/ 2>/dev/null || true
+        cp dist/404.html translator/ 2>/dev/null || true
 
     - name: Deploy to Aliyun via SSH
       uses: easingthemes/ssh-deploy@v4
@@ -45,7 +47,7 @@ jobs:
         REMOTE_HOST: ${{ secrets.ALIYUN_HOST }}
         REMOTE_USER: ${{ secrets.ALIYUN_USER }}
         REMOTE_PORT: ${{ secrets.ALIYUN_PORT }}
-        SOURCE: "dist/"
+        SOURCE: "translator/"
         TARGET: ${{ secrets.TRANSLATOR_TARGET_PATH }}
         ARGS: "-avzr --delete"
         SCRIPT_AFTER: |

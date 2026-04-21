@@ -6,6 +6,8 @@ const withNextIntl = createNextIntlPlugin('./i18n.ts');
 const nextConfig = {
   output: 'export',
   distDir: 'dist',
+  basePath: '/translator',
+  assetPrefix: '/translator',
   images: {
     unoptimized: true,
   },
