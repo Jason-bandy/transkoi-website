@@ -39,3 +39,18 @@ jobs:
         SOURCE: "dist/"
         TARGET: "/www/wwwroot/luckypod.transkoi.com"
         ARGS: "-avzr --delete"
+
+    - name: Verify deployment
+      uses: appleboy/ssh-action@v1
+      with:
+        host: ${{ secrets.ALIYUN_HOST }}
+        username: ${{ secrets.ALIYUN_USER }}
+        key: ${{ secrets.ALIYUN_SSH_KEY }}
+        port: ${{ secrets.ALIYUN_PORT }}
+        script: |
+          echo "=== Files in /www/wwwroot/luckypod.transkoi.com ==="
+          ls -la /www/wwwroot/luckypod.transkoi.com/
+          echo "=== File count ==="
+          find /www/wwwroot/luckypod.transkoi.com/ -type f | wc -l
+          echo "=== HTML files ==="
+          find /www/wwwroot/luckypod.transkoi.com/ -name "*.html"
