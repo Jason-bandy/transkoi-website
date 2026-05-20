@@ -1,4 +1,4 @@
-name: Deploy transkoi-website to Aliyun
+name: Deploy luckypod.transkoi.com
 
 on:
   push:
@@ -29,28 +29,13 @@ jobs:
       env:
         NEXT_TELEMETRY_DISABLED: 1
 
-    - name: Fix output structure
-      run: |
-        for locale in zh en ja; do
-          if [ -f "dist/$locale.html" ]; then
-            mkdir -p "translator/$locale"
-            cp "dist/$locale.html" "translator/$locale/index.html"
-          fi
-        done
-        cp -r dist/_next translator/ 2>/dev/null || true
-        cp dist/404.html translator/ 2>/dev/null || true
-
-    - name: Deploy to Aliyun via SSH
+    - name: Deploy to domestic server (luckypod.transkoi.com)
       uses: easingthemes/ssh-deploy@v4
       with:
         SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
         REMOTE_HOST: ${{ secrets.ALIYUN_HOST }}
         REMOTE_USER: ${{ secrets.ALIYUN_USER }}
         REMOTE_PORT: ${{ secrets.ALIYUN_PORT }}
-        SOURCE: "translator/"
-        TARGET: ${{ secrets.TRANSLATOR_TARGET_PATH }}
+        SOURCE: "dist/"
+        TARGET: "/var/www/luckypod.transkoi.com"
         ARGS: "-avzr --delete"
-        SCRIPT_AFTER: |
-          cd ${{ secrets.TRANSLATOR_TARGET_PATH }}
-          chown -R www:www .
-          echo "TransKoi translator deployment completed at $(date)"
