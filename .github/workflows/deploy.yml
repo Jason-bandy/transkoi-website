@@ -37,5 +37,5 @@ jobs:
         REMOTE_USER: ${{ secrets.ALIYUN_USER }}
         REMOTE_PORT: ${{ secrets.ALIYUN_PORT }}
         SOURCE: "dist/"
-        TARGET: "/var/www/luckypod.transkoi.com"
+        TARGET: "/www/wwwroot/luckypod.transkoi.com"
         ARGS: "-avzr --delete"
