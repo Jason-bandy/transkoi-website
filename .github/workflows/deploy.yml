@@ -7,9 +7,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -29,28 +28,63 @@ jobs:
       env:
         NEXT_TELEMETRY_DISABLED: 1
 
-    - name: Print deploy info (secrets masked)
-      run: |
-        echo "::notice::Deploying to: ${{ secrets.ALIYUN_HOST }} (user: ${{ secrets.ALIYUN_USER }})"
-        echo "::notice::Target path: /www/wwwroot/luckypod.transkoi.com"
+    - name: Upload dist artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: dist
+        path: dist/
+        retention-days: 1
 
-    - name: Deploy to domestic server (luckypod.transkoi.com)
+  deploy-domestic:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download dist artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: dist
+        path: dist/
+
+    - name: Deploy to domestic server (121.43.179.204)
       uses: easingthemes/ssh-deploy@v4
       with:
         SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
         REMOTE_HOST: ${{ secrets.ALIYUN_HOST }}
-        REMOTE_USER: ${{ secrets.ALIYUN_USER }}
+        REMOTE_USER: root
         REMOTE_PORT: ${{ secrets.ALIYUN_PORT }}
         SOURCE: "dist/"
         TARGET: "/www/wwwroot/luckypod.transkoi.com"
         ARGS: "-avzr --delete"
         SCRIPT_AFTER: |
-          echo "=== Verify files on server ==="
+          echo "=== Verify deployment ==="
           echo "Current user: $(whoami)"
-          echo "Target directory listing:"
           ls -la /www/wwwroot/luckypod.transkoi.com/
-          echo "File count:"
-          find /www/wwwroot/luckypod.transkoi.com/ -type f | wc -l
-          echo "HTML files:"
+          find /www/wwwroot/luckypod.transkoi.com/ -name "*.html"
+          echo "=== Done ==="
+
+  deploy-overseas:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download dist artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: dist
+        path: dist/
+
+    - name: Deploy to overseas server (8.208.83.225)
+      uses: easingthemes/ssh-deploy@v4
+      with:
+        SSH_PRIVATE_KEY: ${{ secrets.OVERSEAS_SSH_KEY }}
+        REMOTE_HOST: 8.208.83.225
+        REMOTE_USER: root
+        REMOTE_PORT: 22
+        SOURCE: "dist/"
+        TARGET: "/www/wwwroot/luckypod.transkoi.com"
+        ARGS: "-avzr --delete"
+        SCRIPT_AFTER: |
+          echo "=== Verify deployment ==="
+          echo "Current user: $(whoami)"
+          ls -la /www/wwwroot/luckypod.transkoi.com/
           find /www/wwwroot/luckypod.transkoi.com/ -name "*.html"
           echo "=== Done ==="
