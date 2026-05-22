@@ -57,7 +57,7 @@ jobs:
         REMOTE_PORT: ${{ secrets.ALIYUN_PORT }}
         SOURCE: "dist/"
         TARGET: "/www/wwwroot/luckypod.transkoi.com"
-        ARGS: "-avzr --delete"
+        ARGS: "-avzr --delete --exclude='.user.ini'"
         SCRIPT_AFTER: |
           echo "=== Verify deployment ==="
           echo "Current user: $(whoami)"
@@ -84,7 +84,7 @@ jobs:
         REMOTE_PORT: 22
         SOURCE: "dist/"
         TARGET: "/www/wwwroot/luckypod.transkoi.com"
-        ARGS: "-avzr --delete"
+        ARGS: "-avzr --delete --exclude='.user.ini'"
         SCRIPT_AFTER: |
           echo "=== Verify deployment ==="
           echo "Current user: $(whoami)"
