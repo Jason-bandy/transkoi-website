@@ -15,6 +15,7 @@ export default function Features() {
       icon: 'fa-phone',
       title: t('features.feature2.title'),
       description: t('features.feature2.description'),
+      platformNote: t('features.feature2.platformNote'),
     },
     {
       icon: 'fa-comments',
@@ -71,6 +72,13 @@ export default function Features() {
             <p className="text-gray-400 leading-relaxed">
               {feature.description}
             </p>
+
+            {feature.platformNote && (
+              <div className="mt-4 px-3 py-2 bg-amber-500/10 border border-amber-500/20 rounded-lg text-xs text-amber-400">
+                <i className="fas fa-info-circle mr-2"></i>
+                {feature.platformNote}
+              </div>
+            )}
           </div>
         ))}
       </div>

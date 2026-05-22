@@ -28,23 +28,8 @@ jobs:
       env:
         NEXT_TELEMETRY_DISABLED: 1
 
-    - name: Create index.html redirect
-      run: |
-        cat > dist/index.html << 'EOF'
-        <!DOCTYPE html>
-        <html lang="zh">
-        <head>
-          <meta charset="utf-8">
-          <meta http-equiv="refresh" content="0;url=/zh.html">
-          <meta name="viewport" content="width=device-width,initial-scale=1">
-          <title>TransKoi 锦鲤翻译</title>
-          <link rel="canonical" href="/zh.html">
-        </head>
-        <body>
-          <script>location.href="/zh.html"</script>
-        </body>
-        </html>
-        EOF
+    - name: Copy index.html for root redirect
+      run: cp public/index.html dist/index.html
 
     - name: Upload dist artifact
       uses: actions/upload-artifact@v4

@@ -27,7 +27,8 @@
       },
       "feature2": {
         "title": "📞 电话翻译",
-        "description": "接听外语电话时自动翻译对方语音，实时显示对话内容。支持双向翻译，让您与外国朋友无障碍沟通。"
+        "description": "接听外语电话时自动翻译对方语音，实时显示对话内容。支持双向翻译，让您与外国朋友无障碍沟通。",
+        "platformNote": "目前仅支持 Android。iOS 因系统隐私限制，需使用 2 台设备实现电话翻译。"
       },
       "feature3": {
         "title": "💬 AI 对话翻译",
@@ -73,17 +74,19 @@
         "iosBtn": "App Store 下载"
       },
       "luckyPod": {
-        "badge": "新品上市",
+        "badge": "未来扩展",
         "title": "LuckyPod",
-        "description": "智能翻译耳机，硬件级翻译体验。内置 AI 芯片，支持实时语音翻译，让您与世界各地的人无障碍交流。",
+        "description": "智能翻译耳机硬件方案，提供沉浸式翻译体验。让您与世界各地的人无障碍交流。",
         "features": [
-          "内置 AI 翻译芯片",
-          "40 小时续航",
+          "沉浸式翻译体验",
+          "长续航设计",
           "双麦克风降噪",
-          "蓝牙 5.3 连接",
-          "IPX5 防水"
+          "蓝牙连接",
+          "防水设计"
         ],
-        "contactBtn": "产品咨询"
+        "contactBtn": "产品咨询",
+        "contactEmail": "support@transkoi.com",
+        "contactSubject": "LuckyPod 产品咨询"
       }
     },
     "download": {

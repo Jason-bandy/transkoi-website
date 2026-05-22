@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Navbar() {
   const t = useTranslations('TransKoi');
@@ -31,9 +32,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-6 py-4 md:px-[5%]">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#667eea] to-[#764ba2] flex items-center justify-center text-white font-bold text-lg">
-            T
-          </div>
+          <Image src="/images/logo.png" alt="TransKoi" width={40} height={40} className="rounded-lg" />
           <span className="text-2xl font-black bg-gradient-to-r from-[#667eea] to-[#764ba2] bg-clip-text text-transparent">
             TransKoi
           </span>

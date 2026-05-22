@@ -27,7 +27,8 @@
       },
       "feature2": {
         "title": "📞 Phone Translation",
-        "description": "Automatically translates foreign language calls with real-time conversation display. Supports bidirectional translation for seamless communication with international friends."
+        "description": "Automatically translates foreign language calls with real-time conversation display. Supports bidirectional translation for seamless communication.",
+        "platformNote": "Currently Android only. iOS requires 2 devices due to system privacy restrictions."
       },
       "feature3": {
         "title": "💬 AI Conversation",
@@ -73,17 +74,19 @@
         "iosBtn": "Download on App Store"
       },
       "luckyPod": {
-        "badge": "New Arrival",
+        "badge": "Future",
         "title": "LuckyPod",
-        "description": "Smart translation earbuds with hardware-level translation experience. Built-in AI chip supports real-time voice translation for seamless global communication.",
+        "description": "Smart translation earbuds hardware solution for immersive translation experience. Communicate with people around the world without barriers.",
         "features": [
-          "Built-in AI Translation Chip",
-          "40-Hour Battery Life",
-          "Dual-Mic Noise Cancellation",
-          "Bluetooth 5.3 Connection",
-          "IPX5 Water Resistant"
+          "Immersive translation experience",
+          "Long battery life",
+          "Dual-mic noise cancellation",
+          "Bluetooth connection",
+          "Water resistant"
         ],
-        "contactBtn": "Product Inquiry"
+        "contactBtn": "Product Inquiry",
+        "contactEmail": "support@transkoi.com",
+        "contactSubject": "LuckyPod Product Inquiry"
       }
     },
     "download": {

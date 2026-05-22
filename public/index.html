@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TransKoi 锦鲤翻译</title>
+  <script>
+    (function() {
+      var locales = ['en', 'zh', 'ja'];
+      var browserLang = (navigator.language || navigator.userLanguage).split('-')[0];
+      var target = locales.indexOf(browserLang) >= 0 ? browserLang : 'zh';
+      window.location.href = '/' + target;
+    })();
+  </script>
+</head>
+<body>
+  <noscript><a href="/zh">Click here to enter</a></noscript>
+</body>
+</html>

@@ -27,7 +27,8 @@
       },
       "feature2": {
         "title": "📞 電話翻訳",
-        "description": "外国語の電話を自動的に翻訳し、会話内容をリアルタイム表示。双方向翻訳対応で、外国人の友人ともスムーズに沟通。"
+        "description": "外国語の電話を自動的に翻訳し、会話内容をリアルタイム表示。双方向翻訳対応で、外国人の友人ともスムーズに沟通。",
+        "platformNote": "現在 Android のみ対応。iOS はシステムのプライバシー制限により、2 台のデバイスが必要です。"
       },
       "feature3": {
         "title": "💬 AI 会話翻訳",
@@ -73,17 +74,19 @@
         "iosBtn": "App Store でダウンロード"
       },
       "luckyPod": {
-        "badge": "新発売",
+        "badge": "将来予定",
         "title": "LuckyPod",
-        "description": "スマート翻訳イヤホン、ハードウェアレベルの翻訳体験。AI チップ内蔵でリアルタイム音声翻訳対応。",
+        "description": "没入型翻訳体験を提供するスマート翻訳イヤホンハードウェアソリューション。世界中の人々とバリアフリーなコミュニケーションを実現。",
         "features": [
-          "AI 翻訳チップ内蔵",
-          "40 時間バッテリー",
+          "没入型翻訳体験",
+          "長時間バッテリー",
           "デュアルマイクノイズキャンセリング",
-          "Bluetooth 5.3 接続",
-          "IPX5 防水"
+          "Bluetooth 接続",
+          "防水設計"
         ],
-        "contactBtn": "製品お問い合わせ"
+        "contactBtn": "製品お問い合わせ",
+        "contactEmail": "support@transkoi.com",
+        "contactSubject": "LuckyPod 製品についてのお問い合わせ"
       }
     },
     "download": {
