@@ -78,7 +78,7 @@ jobs:
     - name: Deploy to overseas server (8.208.83.225)
       uses: easingthemes/ssh-deploy@v4
       with:
-        SSH_PRIVATE_KEY: ${{ secrets.OVERSEAS_SSH_KEY }}
+        SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
         REMOTE_HOST: 8.208.83.225
         REMOTE_USER: root
         REMOTE_PORT: 22
