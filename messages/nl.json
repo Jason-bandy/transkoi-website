@@ -1,0 +1,128 @@
+{
+  "TransKoi": {
+    "nav": {
+      "features": "Functies",
+      "products": "Producten",
+      "about": "Over ons",
+      "contact": "Contact",
+      "download": "Nu downloaden"
+    },
+    "hero": {
+      "badge": "AI-vertaaltechnologie van de nieuwe generatie",
+      "title": {
+        "part1": "Breek taalbarrières",
+        "part2": "Verbind de wereld"
+      },
+      "description": "TransKoi — aangedreven door de meest geavanceerde AI-neural netwerk vertaaltechnologie, die realtime, nauwkeurige en natuurlijke interlinguale communicatie levert. Of je nu films kijkt, belt of dagelijkse gesprekken voert — communiceer zonder grenzen.",
+      "downloadBtn": "Gratis downloaden",
+      "productsBtn": "Producten ontdekken"
+    },
+    "features": {
+      "tag": "✨ Kernfuncties",
+      "title": "Waarom TransKoi kiezen?",
+      "subtitle": "Toonaangevende AI-technologie voor de ultieme vertaalervaring",
+      "feature1": {
+        "title": "🎬 Filmmodus",
+        "description": "Toon realtime vertaalde ondertitels bij het kijken van buitenlandse films, met een zwevend venster dat het scherm niet blokkeert. Ondersteunt Netflix, YouTube en andere populaire platforms, zodat je geen enkel spannend moment mist."
+      },
+      "feature2": {
+        "title": "📞 Oproepvertaling",
+        "description": "Automatisch vertalen van inkomende gesprekken in vreemde talen en weergave van gespreksinhoud in realtime. Ondersteuning voor tweerichtingsvertaling voor naadloze communicatie met buitenlandse vrienden.",
+        "platformNote": "Momenteel alleen beschikbaar op Android. Vanwege iOS-privacybeperkingen vereist telefoonvertaling op iOS 2 apparaten."
+      },
+      "feature3": {
+        "title": "💬 AI-gespreksvertaling",
+        "description": "Oefen meertalige gesprekken met een AI-assistent, met spraakinvoer en -uitvoer. Verbeter je taalvaardigheid en maak vertaling natuurlijker en vloeiender."
+      },
+      "feature4": {
+        "title": "⚡ Realtime vertaling",
+        "description": "Neural network-gebaseerde realtime vertaalmotor met een responstijd van minder dan 100ms. Ondersteunt 100+ talen met toonaangevende nauwkeurigheid in de branche."
+      },
+      "feature5": {
+        "title": "🔒 Privacybescherming",
+        "description": "Alle vertaalgegevens worden lokaal versleuteld verwerkt, met optionele offline modus. Strikt conform de GDPR-privacynormen, uw gegevens zijn veilig."
+      },
+      "feature6": {
+        "title": "☁️ Cloudsynchronisatie",
+        "description": "Vertaalgeschiedenis en veelgebruikte zinnen worden gesynchroniseerd via de cloud voor naadloze wisseling tussen apparaten. VIP-gebruikers genieten van onbeperkte cloudopslag."
+      }
+    },
+    "stats": {
+      "languageCount": "100+",
+      "languages": "Talen",
+      "userCount": "500K+",
+      "users": "Actieve gebruikers",
+      "accuracy": "99.5%",
+      "accuracyLabel": "Vertaalnauwkeurigheid",
+      "speed": "<100ms",
+      "responseSpeed": "Responsnelheid"
+    },
+    "products": {
+      "tag": "🚀 Productfamilie",
+      "title": "Onze producten",
+      "subtitle": "Alomvattende vertaaloplossingen van software tot hardware",
+      "app": {
+        "title": "TransKoi App",
+        "description": "Een vlaggenschip AI-vertaalapp die alle kernfuncties integreert. Ondersteunt iOS en Android voor een naadloze interlinguale communicatie-ervaring.",
+        "features": [
+          "Film-/Oproep-/AI-gespreksmodus",
+          "100+ taalondersteuning",
+          "Offline vertaalpakketten",
+          "Spraakinvoer en -uitvoer",
+          "Vertaalgeschiedenis"
+        ],
+        "iosBtn": "Download op de App Store"
+      },
+      "luckyPod": {
+        "badge": "Toekomstige uitbreiding",
+        "title": "LuckyPod",
+        "description": "Slimme vertaal-oordopjes hardwareoplossing voor een meeslepende vertaalervaring. Communiceer moeiteloos met mensen over de hele wereld.",
+        "features": [
+          "Meeslepende vertaalervaring",
+          "Lange batterijduur",
+          "Twee microfoon-geluidsonderdrukking",
+          "Bluetooth-connectiviteit",
+          "Waterdicht ontwerp"
+        ],
+        "contactBtn": "Productinformatie",
+        "contactEmail": "support@transkoi.com",
+        "contactSubject": "Productinformatie LuckyPod"
+      }
+    },
+    "download": {
+      "title": "Klaar om taalbarrières te doorbreken?",
+      "description": "Download TransKoi nu en betreed een nieuw tijdperk van barrière-vrije communicatie. De gratis versie is permanent beschikbaar, VIP ontgrendelt extra geavanceerde functies.",
+      "iosBtn": "Download op de App Store",
+      "note": "Gebruikers in vasteland China wordt aangeraden de App Store te gebruiken; buitenlandse gebruikers worden automatisch doorgestuurd naar hun regionale winkel."
+    },
+    "footer": {
+      "company": "厦门智伽科技有限公司",
+      "description": "TransKoi — de wereld verbinden met AI-technologie, communicatie barrière-vrij maken. We zetten ons in om gebruikers slimmere en gemakkelijkere manieren te bieden om te leven en te werken door middel van toonaangevende AI- en hardwareoplossingen.",
+      "address": "Kamer 403, nr. 18 Guanri Straat, Software Park Fase II, Torch High-tech Zone, Xiamen",
+      "phone": "152-8042-7319 (Hason)",
+      "email": "support@transkoi.com",
+      "copyright": "厦门智伽科技有限公司 Xiamen Zhiplus Technology Co., Ltd. Alle rechten voorbehouden.",
+      "products": {
+        "title": "Producten",
+        "app": "TransKoi App",
+        "luckyPod": "LuckyPod",
+        "vip": "VIP-lidmaatschap",
+        "enterprise": "Ondernemingseditie"
+      },
+      "support": {
+        "title": "Ondersteuning",
+        "help": "Helpcentrum",
+        "tutorials": "Tutorials",
+        "faq": "FAQ",
+        "contact": "Contact"
+      },
+      "company": {
+        "title": "Bedrijf",
+        "about": "Over ons",
+        "careers": "Carrières",
+        "privacy": "Privacybeleid",
+        "terms": "Servicevoorwaarden"
+      }
+    }
+  }
+}

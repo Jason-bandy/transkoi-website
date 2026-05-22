@@ -1,0 +1,128 @@
+{
+  "TransKoi": {
+    "nav": {
+      "features": "Funktionen",
+      "products": "Produkte",
+      "about": "Über uns",
+      "contact": "Kontakt",
+      "download": "Jetzt herunterladen"
+    },
+    "hero": {
+      "badge": "KI-Übersetzungstechnologie der nächsten Generation",
+      "title": {
+        "part1": "Sprachbarrieren durchbrechen",
+        "part2": "Die Welt verbinden"
+      },
+      "description": "TransKoi — basiert auf modernster KI-Neural-Network-Übersetzungstechnologie für Echtzeit-, genaue und natürliche interlinguale Kommunikation. Egal beim Filmeschauen, Telefonieren oder im täglichen Gespräch — kommunizieren Sie ohne Grenzen.",
+      "downloadBtn": "Kostenlos herunterladen",
+      "productsBtn": "Produkte entdecken"
+    },
+    "features": {
+      "tag": "✨ Kernfunktionen",
+      "title": "Warum TransKoi?",
+      "subtitle": "Modernste KI-Technologie für ein ultimatives Übersetzungserlebnis",
+      "feature1": {
+        "title": "🎬 Filmmodus",
+        "description": "Zeigen Sie in Echtzeit übersetzte Untertitel beim Anschauen von fremdsprachigen Filmen — ein schwebendes Fenster blockiert nicht die Bildfläche. Unterstützt Netflix, YouTube und weitere gängige Plattformen, damit Ihnen keine spannende Szene entgeht."
+      },
+      "feature2": {
+        "title": "📞 Anrufübersetzung",
+        "description": "Automatische Übersetzung eingehender Fremdsprachanrufe mit Echtzeit-Anzeige des Gesprächsinhalts. Bidirektionale Übersetzung für nahtlose Kommunikation mit Freunden aus dem Ausland.",
+        "platformNote": "Derzeit nur Android. Aufgrund von iOS-Datenschutzbeschränkungen benötigt die Telefonübersetzung auf iOS 2 Geräte."
+      },
+      "feature3": {
+        "title": "💬 KI-Gesprächsübersetzung",
+        "description": "Üben Sie mehrsprachige Gespräche mit einem KI-Assistenten, mit Sprachein- und -ausgabe. Verbessern Sie Ihre Sprachkenntnisse für natürlichere und flüssigere Übersetzungen."
+      },
+      "feature4": {
+        "title": "⚡ Echtzeitübersetzung",
+        "description": "Neuronaler Echtzeit-Übersetzungsmotor mit einer Reaktionszeit von unter 100 ms. Unterstützt 100+ Sprachen mit branchenführender Genauigkeit."
+      },
+      "feature5": {
+        "title": "🔒 Datenschutz",
+        "description": "Alle Übersetzungsdaten werden lokal verschlüsselt verarbeitet, optional im Offline-Modus. Streng konform mit der DSGVO, Ihre Daten sind sicher."
+      },
+      "feature6": {
+        "title": "☁️ Cloud-Synchronisierung",
+        "description": "Übersetzungsverlauf und häufig genutzte Phrasen werden in der Cloud synchronisiert für nahtlosen Gerätewechsel. VIP-Nutzer genießen unbegrenzten Cloud-Speicher."
+      }
+    },
+    "stats": {
+      "languageCount": "100+",
+      "languages": "Sprachen",
+      "userCount": "500K+",
+      "users": "Aktive Nutzer",
+      "accuracy": "99.5%",
+      "accuracyLabel": "Übersetzungsgenauigkeit",
+      "speed": "<100ms",
+      "responseSpeed": "Antwortgeschwindigkeit"
+    },
+    "products": {
+      "tag": "🚀 Produktfamilie",
+      "title": "Unsere Produkte",
+      "subtitle": "Rundum-Übersetzungslösungen von Software bis Hardware",
+      "app": {
+        "title": "TransKoi App",
+        "description": "Eine Flaggschiff-KI-Übersetzungsapp mit allen Kernfunktionen. Unterstützt iOS und Android für ein nahtloses interlinguales Kommunikationserlebnis.",
+        "features": [
+          "Film-/Anruf-/KI-Gesprächsmodus",
+          "100+ Sprachen",
+          "Offline-Übersetzungspakete",
+          "Sprachein- und -ausgabe",
+          "Übersetzungsverlauf"
+        ],
+        "iosBtn": "Im App Store laden"
+      },
+      "luckyPod": {
+        "badge": "Zukünftige Erweiterung",
+        "title": "LuckyPod",
+        "description": "Intelligente Übersetzungs-Ohrhörern-Hardware für ein immersives Übersetzungserlebnis. Kommunizieren Sie mühelos mit Menschen auf der ganzen Welt.",
+        "features": [
+          "Immersives Übersetzungserlebnis",
+          "Lange Akkulaufzeit",
+          "Dualmikrofon-Geräuschunterdrückung",
+          "Bluetooth-Verbindung",
+          "Wasserdichtes Design"
+        ],
+        "contactBtn": "Produktanfrage",
+        "contactEmail": "support@transkoi.com",
+        "contactSubject": "LuckyPod Produktanfrage"
+      }
+    },
+    "download": {
+      "title": "Bereit, Sprachbarrieren zu durchbrechen?",
+      "description": "Laden Sie TransKoi jetzt herunter und beginnen Sie eine neue Ära der barrierefreien Kommunikation. Die kostenlose Version ist dauerhaft nutzbar, VIP schaltet weitere Premium-Funktionen frei.",
+      "iosBtn": "Im App Store laden",
+      "note": "Nutzer in Festlandchina wird die Nutzung des App Store empfohlen; internationale Nutzer werden automatisch zum jeweiligen regionalen Store weitergeleitet."
+    },
+    "footer": {
+      "company": "厦门智伽科技有限公司",
+      "description": "TransKoi — die Welt mit KI-Technologie verbinden und Kommunikation barrierefrei machen. Wir verpflichten uns, Nutzern smartere und bequemere Wege zum Leben und Arbeiten durch modernste KI- und Hardwarelösungen zu bieten.",
+      "address": "Raum 403, Nr. 18 Guanri Straße, Software Park Phase II, Torch High-tech Zone, Xiamen",
+      "phone": "152-8042-7319 (Hason)",
+      "email": "support@transkoi.com",
+      "copyright": "厦门智伽科技有限公司 Xiamen Zhiplus Technology Co., Ltd. All rights reserved.",
+      "products": {
+        "title": "Produkte",
+        "app": "TransKoi App",
+        "luckyPod": "LuckyPod",
+        "vip": "VIP-Mitgliedschaft",
+        "enterprise": "Enterprise Edition"
+      },
+      "support": {
+        "title": "Support",
+        "help": "Hilfecenter",
+        "tutorials": "Tutorials",
+        "faq": "FAQ",
+        "contact": "Kontakt"
+      },
+      "company": {
+        "title": "Unternehmen",
+        "about": "Über uns",
+        "careers": "Karriere",
+        "privacy": "Datenschutz",
+        "terms": "Nutzungsbedingungen"
+      }
+    }
+  }
+}

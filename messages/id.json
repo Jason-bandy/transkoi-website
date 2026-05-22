@@ -1,0 +1,128 @@
+{
+  "TransKoi": {
+    "nav": {
+      "features": "Fitur",
+      "products": "Produk",
+      "about": "Tentang kami",
+      "contact": "Hubungi kami",
+      "download": "Unduh sekarang"
+    },
+    "hero": {
+      "badge": "Teknologi terjemahan AI generasi baru",
+      "title": {
+        "part1": "Hancurkan hambatan bahasa",
+        "part2": "Hubungkan dunia"
+      },
+      "description": "TransKoi — didukung oleh teknologi terjemahan jaringan saraf AI tercanggih, menghadirkan pengalaman komunikasi lintas bahasa yang real-time, akurat, dan alami. Baik menonton film, menelepon, atau mengobrol sehari-hari, komunikasi tanpa batas.",
+      "downloadBtn": "Unduh gratis",
+      "productsBtn": "Jelajahi produk"
+    },
+    "features": {
+      "tag": "✨ Fitur inti",
+      "title": "Mengapa memilih TransKoi?",
+      "subtitle": "Teknologi AI terdepan untuk pengalaman terjemahan terbaik",
+      "feature1": {
+        "title": "🎬 Mode Film",
+        "description": "Tampilkan terjemahan subtitle secara real-time saat menonton film berbahasa asing, dengan desain jendela mengambang yang tidak menghalangi layar. Mendukung Netflix, YouTube, dan platform utama lainnya, agar Anda tidak melewatkan momen menarik apa pun."
+      },
+      "feature2": {
+        "title": "📞 Terjemahan Telepon",
+        "description": "Terjemahkan panggilan masuk berbahasa asing secara otomatis dan tampilkan konten percakapan secara real-time. Mendukung terjemahan dua arah untuk komunikasi lancar dengan teman asing.",
+        "platformNote": "Saat ini hanya mendukung Android. Karena batasan privasi iOS, terjemahan telepon di iOS memerlukan 2 perangkat."
+      },
+      "feature3": {
+        "title": "💬 Terjemahan Percakapan AI",
+        "description": "Latih percakapan multibahasa dengan asisten AI, mendukung input dan output suara. Tingkatkan kemampuan bahasa Anda dan buat terjemahan lebih alami dan lancar."
+      },
+      "feature4": {
+        "title": "⚡ Terjemahan Real-time",
+        "description": "Mesin terjemahan real-time berbasis jaringan saraf, waktu respons kurang dari 100ms. Mendukung 100+ bahasa dengan akurasi terdepan di industri."
+      },
+      "feature5": {
+        "title": "🔒 Perlindungan privasi",
+        "description": "Semua data terjemahan diproses dengan enkripsi lokal, dengan mode offline opsional. Mematuhi standar privasi GDPR secara ketat, data Anda aman."
+      },
+      "feature6": {
+        "title": "☁️ Sinkronisasi cloud",
+        "description": "Riwayat terjemahan dan frasa umum disinkronkan di cloud untuk peralihan mulus antar perangkat. Pengguna VIP menikmati penyimpanan cloud tak terbatas."
+      }
+    },
+    "stats": {
+      "languageCount": "100+",
+      "languages": "Bahasa",
+      "userCount": "500K+",
+      "users": "Pengguna aktif",
+      "accuracy": "99.5%",
+      "accuracyLabel": "Akurasi terjemahan",
+      "speed": "<100ms",
+      "responseSpeed": "Kecepatan respons"
+    },
+    "products": {
+      "tag": "🚀 Keluarga produk",
+      "title": "Produk kami",
+      "subtitle": "Solusi terjemahan lengkap dari perangkat lunak hingga perangkat keras",
+      "app": {
+        "title": "TransKoi App",
+        "description": "Aplikasi terjemahan AI unggulan yang mengintegrasikan semua fitur inti. Mendukung iOS dan Android untuk pengalaman komunikasi lintas bahasa yang mulus.",
+        "features": [
+          "Mode Film / Telepon / Percakapan AI",
+          "Dukungan 100+ bahasa",
+          "Paket terjemahan offline",
+          "Input dan output suara",
+          "Riwayat terjemahan"
+        ],
+        "iosBtn": "Unduh dari App Store"
+      },
+      "luckyPod": {
+        "badge": "Ekspansi masa depan",
+        "title": "LuckyPod",
+        "description": "Solusi perangkat keras earbud terjemahan cerdas untuk pengalaman terjemahan yang mendalam. Berkomunikasi dengan mudah dengan orang-orang dari seluruh dunia.",
+        "features": [
+          "Pengalaman terjemahan mendalam",
+          "Baterai tahan lama",
+          "Pembatalan noise mikrofon ganda",
+          "Koneksi Bluetooth",
+          "Desain tahan air"
+        ],
+        "contactBtn": "Pertanyaan produk",
+        "contactEmail": "support@transkoi.com",
+        "contactSubject": "Pertanyaan produk LuckyPod"
+      }
+    },
+    "download": {
+      "title": "Siap menghancurkan hambatan bahasa?",
+      "description": "Unduh TransKoi sekarang dan masuk ke era baru komunikasi tanpa hambatan. Versi gratis tersedia selamanya, VIP membuka lebih banyak fitur premium.",
+      "iosBtn": "Unduh dari App Store",
+      "note": "Pengguna di Tiongkok daratan disarankan menggunakan App Store; pengguna di luar negeri secara otomatis dialihkan ke toko regional mereka."
+    },
+    "footer": {
+      "company": "厦门智伽科技有限公司",
+      "description": "TransKoi — menghubungkan dunia dengan teknologi AI, membuat komunikasi tanpa hambatan. Kami berkomitmen untuk memberikan pengguna cara hidup dan bekerja yang lebih cerdas dan nyaman melalui solusi AI dan perangkat keras terdepan.",
+      "address": "Ruang 403, No. 18 Jalan Guanri, Software Park Tahap II, Zona Teknologi Tinggi Torch, Xiamen",
+      "phone": "152-8042-7319 (Hason)",
+      "email": "support@transkoi.com",
+      "copyright": "厦门智伽科技有限公司 Xiamen Zhiplus Technology Co., Ltd. All rights reserved.",
+      "products": {
+        "title": "Produk",
+        "app": "TransKoi App",
+        "luckyPod": "LuckyPod",
+        "vip": "Keanggotaan VIP",
+        "enterprise": "Edisi Perusahaan"
+      },
+      "support": {
+        "title": "Dukungan",
+        "help": "Pusat bantuan",
+        "tutorials": "Tutorial",
+        "faq": "FAQ",
+        "contact": "Hubungi kami"
+      },
+      "company": {
+        "title": "Perusahaan",
+        "about": "Tentang kami",
+        "careers": "Karir",
+        "privacy": "Kebijakan privasi",
+        "terms": "Syarat layanan"
+      }
+    }
+  }
+}

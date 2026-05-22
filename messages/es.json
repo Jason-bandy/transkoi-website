@@ -1,0 +1,128 @@
+{
+  "TransKoi": {
+    "nav": {
+      "features": "Funciones",
+      "products": "Productos",
+      "about": "Sobre nosotros",
+      "contact": "Contacto",
+      "download": "Descargar ahora"
+    },
+    "hero": {
+      "badge": "Tecnología de traducción IA de nueva generación",
+      "title": {
+        "part1": "Rompe las barreras lingüísticas",
+        "part2": "Conecta el mundo"
+      },
+      "description": "TransKoi — impulsado por tecnología de traducción con redes neuronales IA de última generación, ofreciendo comunicación interlingüe en tiempo real, precisa y natural. Ya sea viendo películas, llamando o conversando, comunícate sin límites.",
+      "downloadBtn": "Descarga gratuita",
+      "productsBtn": "Explorar productos"
+    },
+    "features": {
+      "tag": "✨ Funciones principales",
+      "title": "¿Por qué elegir TransKoi?",
+      "subtitle": "Tecnología IA de vanguardia para una experiencia de traducción definitiva",
+      "feature1": {
+        "title": "🎬 Modo Cine",
+        "description": "Muestra subtítulos traducidos en tiempo real mientras ves películas en idiomas extranjeros, con un diseño de ventana flotante que no bloquea la pantalla. Compatible con Netflix, YouTube y otras plataformas principales para que no te pierdas nada."
+      },
+      "feature2": {
+        "title": "📞 Traducción de llamadas",
+        "description": "Traduce automáticamente las llamadas entrantes en idiomas extranjeros y muestra el contenido de la conversación en tiempo real. Soporte de traducción bidireccional para comunicarte sin barreras con amigos extranjeros.",
+        "platformNote": "Actualmente solo disponible en Android. Debido a las restricciones de privacidad de iOS, la traducción telefónica en iOS requiere 2 dispositivos."
+      },
+      "feature3": {
+        "title": "💬 Traducción de conversación IA",
+        "description": "Practica conversaciones multilingües con un asistente IA, con entrada y salida de voz. Mejora tus habilidades lingüísticas y haz que la traducción sea más natural y fluida."
+      },
+      "feature4": {
+        "title": "⚡ Traducción en tiempo real",
+        "description": "Motor de traducción en tiempo real basado en redes neuronales, con un tiempo de respuesta inferior a 100 ms. Compatible con más de 100 idiomas y con una precisión líder en la industria."
+      },
+      "feature5": {
+        "title": "🔒 Protección de privacidad",
+        "description": "Todos los datos de traducción se procesan con cifrado local y modo sin conexión opcional. Cumple estrictamente con el RGPD, tus datos están seguros."
+      },
+      "feature6": {
+        "title": "☁️ Sincronización en la nube",
+        "description": "Historial de traducciones y frases frecuentes sincronizados en la nube para un cambio fluido entre dispositivos. Los usuarios VIP disfrutan de almacenamiento ilimitado en la nube."
+      }
+    },
+    "stats": {
+      "languageCount": "100+",
+      "languages": "Idiomas",
+      "userCount": "500K+",
+      "users": "Usuarios activos",
+      "accuracy": "99.5%",
+      "accuracyLabel": "Precisión de traducción",
+      "speed": "<100ms",
+      "responseSpeed": "Velocidad de respuesta"
+    },
+    "products": {
+      "tag": "🚀 Gama de productos",
+      "title": "Nuestros productos",
+      "subtitle": "Soluciones de traducción integrales, de software a hardware",
+      "app": {
+        "title": "TransKoi App",
+        "description": "Una aplicación de traducción IA insignia que integra todas las funciones principales. Compatible con iOS y Android para una experiencia de comunicación interlingüe fluida.",
+        "features": [
+          "Modos Cine / Llamada / Conversación IA",
+          "Más de 100 idiomas",
+          "Paquetes de traducción sin conexión",
+          "Entrada y salida de voz",
+          "Historial de traducciones"
+        ],
+        "iosBtn": "Descargar en App Store"
+      },
+      "luckyPod": {
+        "badge": "Expansión futura",
+        "title": "LuckyPod",
+        "description": "Solución de hardware de auriculares de traducción inteligentes para una experiencia de traducción inmersiva. Comunícate sin esfuerzo con personas de todo el mundo.",
+        "features": [
+          "Experiencia de traducción inmersiva",
+          "Larga duración de batería",
+          "Cancelación de ruido con doble micrófono",
+          "Conexión Bluetooth",
+          "Diseño resistente al agua"
+        ],
+        "contactBtn": "Consulta de producto",
+        "contactEmail": "support@transkoi.com",
+        "contactSubject": "Consulta de producto LuckyPod"
+      }
+    },
+    "download": {
+      "title": "¿Listo para romper las barreras lingüísticas?",
+      "description": "Descarga TransKoi ahora y entra en una nueva era de comunicación sin barreras. La versión gratuita está disponible para siempre, VIP desbloquea más funciones avanzadas.",
+      "iosBtn": "Descargar en App Store",
+      "note": "Se recomienda a los usuarios de China continental usar App Store; los usuarios en el extranjero se redirigen automáticamente a su tienda regional."
+    },
+    "footer": {
+      "company": "厦门智伽科技有限公司",
+      "description": "TransKoi — conectando el mundo con tecnología IA, haciendo que la comunicación sea sin barreras. Nos comprometemos a ofrecer a los usuarios formas más inteligentes y convenientes de vivir y trabajar a través de soluciones IA y hardware de vanguardia.",
+      "address": "Sala 403, Nº18 Calle Guanri, Software Park Fase II, Zona de Alta Tecnología Torch, Xiamen",
+      "phone": "152-8042-7319 (Hason)",
+      "email": "support@transkoi.com",
+      "copyright": "厦门智伽科技有限公司 Xiamen Zhiplus Technology Co., Ltd. All rights reserved.",
+      "products": {
+        "title": "Productos",
+        "app": "TransKoi App",
+        "luckyPod": "LuckyPod",
+        "vip": "Membresía VIP",
+        "enterprise": "Edición Empresas"
+      },
+      "support": {
+        "title": "Soporte",
+        "help": "Centro de ayuda",
+        "tutorials": "Tutoriales",
+        "faq": "Preguntas frecuentes",
+        "contact": "Contacto"
+      },
+      "company": {
+        "title": "Empresa",
+        "about": "Sobre nosotros",
+        "careers": "Carreras",
+        "privacy": "Política de privacidad",
+        "terms": "Términos de servicio"
+      }
+    }
+  }
+}

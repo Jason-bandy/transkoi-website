@@ -9,7 +9,7 @@ export function GET() {
   <title>TransKoi 锦鲤翻译</title>
   <script>
     (function() {
-      var locales = ['en', 'zh', 'ja'];
+      var locales = ['zh', 'en', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt', 'ru', 'ar', 'hi', 'th', 'vi', 'id', 'nl', 'sv', 'pl'];
       var browserLang = (navigator.language || navigator.userLanguage).split('-')[0];
       var target = locales.indexOf(browserLang) >= 0 ? browserLang : 'zh';
       window.location.href = '/' + target;

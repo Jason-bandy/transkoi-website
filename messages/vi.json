@@ -1,0 +1,128 @@
+{
+  "TransKoi": {
+    "nav": {
+      "features": "Tính năng",
+      "products": "Sản phẩm",
+      "about": "Về chúng tôi",
+      "contact": "Liên hệ",
+      "download": "Tải ngay"
+    },
+    "hero": {
+      "badge": "Công nghệ dịch AI thế hệ mới",
+      "title": {
+        "part1": "Phá vỡ rào cản ngôn ngữ",
+        "part2": "Kết nối toàn thế giới"
+      },
+      "description": "TransKoi — được hỗ trợ bởi công nghệ dịch thuật mạng nơ-ron AI tiên tiến nhất, mang lại trải nghiệm giao tiếp liên ngôn ngữ chính xác, tự nhiên và thời gian thực. Dù xem phim, gọi điện hay trò chuyện hàng ngày, bạn đều có thể giao tiếp không giới hạn.",
+      "downloadBtn": "Tải miễn phí",
+      "productsBtn": "Khám phá sản phẩm"
+    },
+    "features": {
+      "tag": "✨ Tính năng cốt lõi",
+      "title": "Tại sao chọn TransKoi?",
+      "subtitle": "Công nghệ AI tiên tiến cho trải nghiệm dịch thuật hoàn hảo",
+      "feature1": {
+        "title": "🎬 Chế độ Phim",
+        "description": "Hiển thị phụ đề dịch thời gian thực khi xem phim ngoại ngữ, thiết kế cửa sổ nổi không che khuất màn hình. Hỗ trợ Netflix, YouTube và các nền tảng phổ biến khác, giúp bạn không bỏ lỡ bất kỳ khoảnh khắc nào."
+      },
+      "feature2": {
+        "title": "📞 Dịch cuộc gọi",
+        "description": "Tự động dịch cuộc gọi đến bằng ngôn ngữ nước ngoài và hiển thị nội dung hội thoại theo thời gian thực. Hỗ trợ dịch hai chiều để giao tiếp suôn sẻ với bạn bè nước ngoài.",
+        "platformNote": "Hiện chỉ hỗ trợ Android. Do hạn chế về quyền riêng tư của iOS, dịch cuộc gọi trên iOS yêu cầu 2 thiết bị."
+      },
+      "feature3": {
+        "title": "💬 Dịch hội thoại AI",
+        "description": "Luyện tập hội thoại đa ngôn ngữ với trợ lý AI, hỗ trợ nhập và xuất giọng nói. Nâng cao kỹ năng ngôn ngữ và giúp bản dịch tự nhiên, trôi chảy hơn."
+      },
+      "feature4": {
+        "title": "⚡ Dịch thời gian thực",
+        "description": "Công cụ dịch thời gian thực dựa trên mạng nơ-ron, thời gian phản hồi dưới 100ms. Hỗ trợ 100+ ngôn ngữ với độ chính xác hàng đầu ngành."
+      },
+      "feature5": {
+        "title": "🔒 Bảo vệ quyền riêng tư",
+        "description": "Tất cả dữ liệu dịch được mã hóa cục bộ, kèm chế độ ngoại tuyến tùy chọn. Tuân thủ nghiêm ngặt tiêu chuẩn GDPR, dữ liệu của bạn được bảo đảm an toàn."
+      },
+      "feature6": {
+        "title": "☁️ Đồng bộ đám mây",
+        "description": "Đồng bộ lịch sử dịch và cụm từ thường dùng qua đám mây để chuyển đổi mượt mà giữa các thiết bị. Người dùng VIP được hưởng bộ lưu trữ đám mây không giới hạn."
+      }
+    },
+    "stats": {
+      "languageCount": "100+",
+      "languages": "Ngôn ngữ",
+      "userCount": "500K+",
+      "users": "Người dùng hoạt động",
+      "accuracy": "99.5%",
+      "accuracyLabel": "Độ chính xác dịch",
+      "speed": "<100ms",
+      "responseSpeed": "Tốc độ phản hồi"
+    },
+    "products": {
+      "tag": "🚀 Hệ sinh thái sản phẩm",
+      "title": "Sản phẩm của chúng tôi",
+      "subtitle": "Giải pháp dịch thuật toàn diện từ phần mềm đến phần cứng",
+      "app": {
+        "title": "TransKoi App",
+        "description": "Ứng dụng dịch AI cao cấp tích hợp tất cả tính năng cốt lõi. Hỗ trợ iOS và Android cho trải nghiệm giao tiếp liên ngôn ngữ mượt mà.",
+        "features": [
+          "Chế độ Phim / Cuộc gọi / Hội thoại AI",
+          "Hỗ trợ 100+ ngôn ngữ",
+          "Gói dịch ngoại tuyến",
+          "Nhập và xuất giọng nói",
+          "Lịch sử dịch"
+        ],
+        "iosBtn": "Tải từ App Store"
+      },
+      "luckyPod": {
+        "badge": "Mở rộng trong tương lai",
+        "title": "LuckyPod",
+        "description": "Giải pháp phần cứng tai nghe dịch thông minh cho trải nghiệm dịch thuật đắm chìm. Giao tiếp dễ dàng với người dùng trên toàn thế giới.",
+        "features": [
+          "Trải nghiệm dịch thuật đắm chìm",
+          "Pin lâu dài",
+          "Chống ồn micro kép",
+          "Kết nối Bluetooth",
+          "Thiết kế chống nước"
+        ],
+        "contactBtn": "Liên hệ sản phẩm",
+        "contactEmail": "support@transkoi.com",
+        "contactSubject": "Liên hệ sản phẩm LuckyPod"
+      }
+    },
+    "download": {
+      "title": "Sẵn sàng phá vỡ rào cản ngôn ngữ?",
+      "description": "Tải TransKoi ngay bây giờ và bước vào kỷ nguyên giao tiếp không rào cản. Phiên bản miễn phí sử dụng vĩnh viễn, VIP mở khóa thêm tính năng cao cấp.",
+      "iosBtn": "Tải từ App Store",
+      "note": "Người dùng tại Trung Quốc đại lục nên sử dụng App Store; người dùng nước ngoài sẽ tự động chuyển đến cửa hàng khu vực của họ."
+    },
+    "footer": {
+      "company": "厦门智伽科技有限公司",
+      "description": "TransKoi — kết nối thế giới bằng công nghệ AI, giúp giao tiếp không rào cản. Chúng tôi cam kết mang đến cho người dùng những cách sống và làm việc thông minh, thuận tiện hơn thông qua các giải pháp AI và phần cứng tiên tiến.",
+      "address": "Phòng 403, số 18 đường Guanri, Công viên Phần mềm Giai đoạn II, Khu Công nghệ cao Torch, Hạ Môn",
+      "phone": "152-8042-7319 (Hason)",
+      "email": "support@transkoi.com",
+      "copyright": "厦门智伽科技有限公司 Xiamen Zhiplus Technology Co., Ltd. All rights reserved.",
+      "products": {
+        "title": "Sản phẩm",
+        "app": "TransKoi App",
+        "luckyPod": "LuckyPod",
+        "vip": "Thành viên VIP",
+        "enterprise": "Bản doanh nghiệp"
+      },
+      "support": {
+        "title": "Hỗ trợ",
+        "help": "Trung tâm trợ giúp",
+        "tutorials": "Hướng dẫn",
+        "faq": "Câu hỏi thường gặp",
+        "contact": "Liên hệ"
+      },
+      "company": {
+        "title": "Công ty",
+        "about": "Về chúng tôi",
+        "careers": "Tuyển dụng",
+        "privacy": "Chính sách quyền riêng tư",
+        "terms": "Điều khoản dịch vụ"
+      }
+    }
+  }
+}

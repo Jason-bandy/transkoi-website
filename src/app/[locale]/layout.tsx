@@ -10,13 +10,16 @@ const inter = Inter({
   display: "swap",
 });
 
+// RTL languages
+const rtlLocales = ['ar'];
+
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'TransKoi' });
 
   return {
-    title: 'TransKoi 锦鲤翻译 - AI 实时翻译，连接世界',
+    title: t('hero.description').substring(0, 60),
     description: t('hero.description'),
-    keywords: '翻译，AI 翻译，实时翻译，锦鲤翻译，TransKoi, LuckyPod, 智能翻译，跨语言沟通',
+    keywords: t('footer.description'),
     authors: [{ name: '厦门智伽科技有限公司' }],
     creator: 'TransKoi Team',
     publisher: '厦门智伽科技有限公司',
@@ -32,9 +35,10 @@ export default async function RootLayout({
   params: { locale: string };
 }) {
   const messages = await getMessages();
+  const dir = rtlLocales.includes(locale) ? 'rtl' : 'ltr';
 
   return (
-    <html lang={locale}>
+    <html lang={locale} dir={dir}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

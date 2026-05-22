@@ -1,0 +1,128 @@
+{
+  "TransKoi": {
+    "nav": {
+      "features": "Recursos",
+      "products": "Produtos",
+      "about": "Sobre nós",
+      "contact": "Contato",
+      "download": "Baixar agora"
+    },
+    "hero": {
+      "badge": "Tecnologia de tradução IA de nova geração",
+      "title": {
+        "part1": "Quebre barreiras linguísticas",
+        "part2": "Conecte o mundo"
+      },
+      "description": "TransKoi — impulsado pela mais avançada tecnologia de tradução com redes neurais de IA, oferecendo comunicação interlingue em tempo real, precisa e natural. Seja assistindo filmes, fazendo chamadas ou conversando, comunique-se sem limites.",
+      "downloadBtn": "Download gratuito",
+      "productsBtn": "Explorar produtos"
+    },
+    "features": {
+      "tag": "✨ Recursos principais",
+      "title": "Por que escolher o TransKoi?",
+      "subtitle": "Tecnologia IA de ponta para uma experiência de tradução definitiva",
+      "feature1": {
+        "title": "🎬 Modo Cinema",
+        "description": "Exiba legendas traduzidas em tempo real enquanto assiste filmes em idiomas estrangeiros, com design de janela flutuante que não obstrui a tela. Suporta Netflix, YouTube e outras plataformas principais, para você não perder nenhum momento."
+      },
+      "feature2": {
+        "title": "📞 Tradução de chamadas",
+        "description": "Traduza automaticamente chamadas recebidas em idiomas estrangeiros e exiba o conteúdo da conversa em tempo real. Suporte para tradução bidirecional para se comunicar sem barreiras com amigos estrangeiros.",
+        "platformNote": "Atualmente disponível apenas no Android. Devido às restrições de privacidade do iOS, a tradução telefônica no iOS requer 2 dispositivos."
+      },
+      "feature3": {
+        "title": "💬 Tradução de conversa IA",
+        "description": "Pratique conversas multilíngues com um assistente IA, com entrada e saída de voz. Melhore suas habilidades linguísticas e torne a tradução mais natural e fluida."
+      },
+      "feature4": {
+        "title": "⚡ Tradução em tempo real",
+        "description": "Motor de tradução em tempo real baseado em redes neurais, com tempo de resposta inferior a 100 ms. Suporta mais de 100 idiomas com precisão líder do setor."
+      },
+      "feature5": {
+        "title": "🔒 Proteção de privacidade",
+        "description": "Todos os dados de tradução são processados com criptografia local e modo off-line opcional. Em conformidade com o GDPR, seus dados estão seguros."
+      },
+      "feature6": {
+        "title": "☁️ Sincronização na nuvem",
+        "description": "Histórico de traduções e frases frequentes sincronizados na nuvem para troca perfeita entre dispositivos. Usuários VIP desfrutam de armazenamento em nuvem ilimitado."
+      }
+    },
+    "stats": {
+      "languageCount": "100+",
+      "languages": "Idiomas",
+      "userCount": "500K+",
+      "users": "Usuários ativos",
+      "accuracy": "99.5%",
+      "accuracyLabel": "Precisão de tradução",
+      "speed": "<100ms",
+      "responseSpeed": "Velocidade de resposta"
+    },
+    "products": {
+      "tag": "🚀 Família de produtos",
+      "title": "Nossos produtos",
+      "subtitle": "Soluções de tradução abrangentes, de software a hardware",
+      "app": {
+        "title": "TransKoi App",
+        "description": "Um aplicativo de tradução IA principal que integra todos os recursos principais. Suporta iOS e Android para uma experiência de comunicação interlingue fluida.",
+        "features": [
+          "Modos Cinema / Chamada / Conversa IA",
+          "Mais de 100 idiomas",
+          "Pacotes de tradução off-line",
+          "Entrada e saída de voz",
+          "Histórico de traduções"
+        ],
+        "iosBtn": "Baixar na App Store"
+      },
+      "luckyPod": {
+        "badge": "Expansão futura",
+        "title": "LuckyPod",
+        "description": "Solução de hardware de fones de tradução inteligente para uma experiência de tradução imersiva. Comunique-se sem esforço com pessoas de todo o mundo.",
+        "features": [
+          "Experiência de tradução imersiva",
+          "Longa duração de bateria",
+          "Cancelamento de ruído com microfone duplo",
+          "Conexão Bluetooth",
+          "Design à prova d'água"
+        ],
+        "contactBtn": "Consulta sobre produto",
+        "contactEmail": "support@transkoi.com",
+        "contactSubject": "Consulta sobre produto LuckyPod"
+      }
+    },
+    "download": {
+      "title": "Pronto para quebrar as barreiras linguísticas?",
+      "description": "Baixe o TransKoi agora e entre em uma nova era de comunicação sem barreiras. A versão gratuita está disponível para sempre, VIP desbloqueia mais recursos avançados.",
+      "iosBtn": "Baixar na App Store",
+      "note": "Recomenda-se que usuários da China continental usem a App Store; usuários no exterior são redirecionados automaticamente para sua loja regional."
+    },
+    "footer": {
+      "company": "厦门智伽科技有限公司",
+      "description": "TransKoi — conectando o mundo com tecnologia IA, tornando a comunicação sem barreiras. Comprometemo-nos a oferecer aos usuários formas mais inteligentes e convenientes de viver e trabalhar através de soluções IA e hardware de ponta.",
+      "address": "Sala 403, Nº 18 Rua Guanri, Software Park Fase II, Zona de Alta Tecnologia Torch, Xiamen",
+      "phone": "152-8042-7319 (Hason)",
+      "email": "support@transkoi.com",
+      "copyright": "厦门智伽科技有限公司 Xiamen Zhiplus Technology Co., Ltd. All rights reserved.",
+      "products": {
+        "title": "Produtos",
+        "app": "TransKoi App",
+        "luckyPod": "LuckyPod",
+        "vip": "Assinatura VIP",
+        "enterprise": "Edição Empresarial"
+      },
+      "support": {
+        "title": "Suporte",
+        "help": "Central de ajuda",
+        "tutorials": "Tutoriais",
+        "faq": "Perguntas frequentes",
+        "contact": "Contato"
+      },
+      "company": {
+        "title": "Empresa",
+        "about": "Sobre nós",
+        "careers": "Carreiras",
+        "privacy": "Política de privacidade",
+        "terms": "Termos de serviço"
+      }
+    }
+  }
+}

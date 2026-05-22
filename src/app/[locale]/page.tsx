@@ -8,7 +8,7 @@ import Products from '@/components/Products';
 import Download from '@/components/Download';
 import Footer from '@/components/Footer';
 
-const locales = ['en', 'zh', 'ja'];
+const locales = ['zh', 'en', 'ja', 'ko', 'de', 'fr', 'es', 'it', 'pt', 'ru', 'ar', 'hi', 'th', 'vi', 'id', 'nl', 'sv', 'pl'];
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));

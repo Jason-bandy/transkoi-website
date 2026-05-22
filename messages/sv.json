@@ -1,0 +1,128 @@
+{
+  "TransKoi": {
+    "nav": {
+      "features": "Funktioner",
+      "products": "Produkter",
+      "about": "Om oss",
+      "contact": "Kontakta oss",
+      "download": "Ladda ner nu"
+    },
+    "hero": {
+      "badge": "AI-översättningsteknik av nästa generation",
+      "title": {
+        "part1": "Bryt språkbarriärer",
+        "part2": "Anslut världen"
+      },
+      "description": "TransKoi — drivs av den mest avancerade AI-neuronnätsbaserade översättningstekniken och levererar realtids-, exakt och naturlig flerspråkig kommunikation. Oavsett om du tittar på filmer, ringer eller har dagliga samtal — kommunicera utan gränser.",
+      "downloadBtn": "Ladda ner gratis",
+      "productsBtn": "Utforska produkter"
+    },
+    "features": {
+      "tag": "✨ KärnFunktioner",
+      "title": "Varför välja TransKoi?",
+      "subtitle": "Banbrytande AI-teknik för den ultimata översättningsupplevelsen",
+      "feature1": {
+        "title": "🎬 Filmläge",
+        "description": "Visa realtidsöversatta undertexter när du tittar på filmer på främmande språk, med ett flytande fönster som inte blockerar skärmen. Stöder Netflix, YouTube och andra stora plattformar, så att du inte missar några spännande scener."
+      },
+      "feature2": {
+        "title": "📞 Samtalsöversättning",
+        "description": "Översätt inkommande samtal på främmande språk automatiskt och visa samtalens innehåll i realtid. Stöd för tvåvägsöversättning för sömlös kommunikation med utländska vänner.",
+        "platformNote": "För närvarande endast tillgängligt på Android. På grund av iOS integritetsbegränsningar krävs 2 enheter för telefonöversättning på iOS."
+      },
+      "feature3": {
+        "title": "💬 AI-samtalsöversättning",
+        "description": "Öva flerspråkiga samtal med en AI-assistent, med stöd för röst in och ut. Förbättra dina språkfärdigheter och gör översättningen mer naturlig och flytande."
+      },
+      "feature4": {
+        "title": "⚡ Realtidsöversättning",
+        "description": "Neuronnätsbaserad realtidsöversättningsmotor med responstid under 100ms. Stöder 100+ språk med branschledande noggrannhet."
+      },
+      "feature5": {
+        "title": "🔒 Integritetsskydd",
+        "description": "All översättningsdata behandlas med lokal kryptering och valfri offline-läge. Strikt överensstämmelse med GDPR-integritetsstandarder, din data är säker."
+      },
+      "feature6": {
+        "title": "☁️ Molnsynkronisering",
+        "description": "Översättningshistorik och vanliga fraser synkroniseras via molnet för sömlös växling mellan enheter. VIP-användare njuter av obegränsad molnlagring."
+      }
+    },
+    "stats": {
+      "languageCount": "100+",
+      "languages": "Språk",
+      "userCount": "500K+",
+      "users": "Aktiva användare",
+      "accuracy": "99.5%",
+      "accuracyLabel": "Översättningsnoggrannhet",
+      "speed": "<100ms",
+      "responseSpeed": "Svarshastighet"
+    },
+    "products": {
+      "tag": "🚀 Produktfamilj",
+      "title": "Våra produkter",
+      "subtitle": "Omfattande översättningslösningar från mjukvara till hårdvara",
+      "app": {
+        "title": "TransKoi App",
+        "description": "En flaggskepps-AI-översättningsapp som integrerar alla kärnfunktioner. Stöder iOS och Android för en sömlös flerspråkig kommunikationsupplevelse.",
+        "features": [
+          "Film-/Samtal-/AI-samtalsläge",
+          "100+ språkstöd",
+          "Offline översättningspaket",
+          "Röst in och ut",
+          "Översättningshistorik"
+        ],
+        "iosBtn": "Ladda ner på App Store"
+      },
+      "luckyPod": {
+        "badge": "Framtida expansion",
+        "title": "LuckyPod",
+        "description": "Smarta översättningshörlurar i hårdvara för en uppslukande översättningsupplevelse. Kommunisera utan ansträngning med människor runt om i världen.",
+        "features": [
+          "Uppslukande översättningsupplevelse",
+          "Lång batteritid",
+          "Dubbelmikrofon brusreducering",
+          "Bluetooth-anslutning",
+          "Vattentät design"
+        ],
+        "contactBtn": "Produktfråga",
+        "contactEmail": "support@transkoi.com",
+        "contactSubject": "Produktfråga LuckyPod"
+      }
+    },
+    "download": {
+      "title": "Redo att bryta språkbarriärer?",
+      "description": "Ladda ner TransKoi nu och gå in i en ny era av barriärfri kommunikation. Den gratis versionen är tillgänglig för alltid, VIP låser upp fler avancerade funktioner.",
+      "iosBtn": "Ladda ner på App Store",
+      "note": "Användare i fastlandsKina rekommenderas att använda App Store; utländska användare omdirigeras automatiskt till sin regionala butik."
+    },
+    "footer": {
+      "company": "厦门智伽科技有限公司",
+      "description": "TransKoi — att ansluta världen med AI-teknik, göra kommunikation barriärfri. Vi är engagerade i att erbjuda användare smartare och bekvämare sätt att leva och arbeta genom banbrytande AI- och hårdvarulösningar.",
+      "address": "Rum 403, nr 18 Guanri gatan, Software Park Fas II, Torch High-tech Zone, Xiamen",
+      "phone": "152-8042-7319 (Hason)",
+      "email": "support@transkoi.com",
+      "copyright": "厦门智伽科技有限公司 Xiamen Zhiplus Technology Co., Ltd. Alla rättigheter förbehållna.",
+      "products": {
+        "title": "Produkter",
+        "app": "TransKoi App",
+        "luckyPod": "LuckyPod",
+        "vip": "VIP-medlemskap",
+        "enterprise": "Företagsversion"
+      },
+      "support": {
+        "title": "Support",
+        "help": "Hjälpcenter",
+        "tutorials": "Handledningar",
+        "faq": "FAQ",
+        "contact": "Kontakta oss"
+      },
+      "company": {
+        "title": "Företag",
+        "about": "Om oss",
+        "careers": "Karriär",
+        "privacy": "Integritetspolicy",
+        "terms": "Användarvillkor"
+      }
+    }
+  }
+}
