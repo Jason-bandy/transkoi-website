@@ -3,9 +3,12 @@
 import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 export default function Navbar() {
   const t = useTranslations('TransKoi');
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -15,6 +18,9 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Extract current locale from pathname (e.g., /zh -> zh)
+  const currentLocale = pathname?.split('/')[1] || 'zh';
 
   const handleClick = (section: string) => {
     const element = document.getElementById(section);
@@ -79,12 +85,17 @@ export default function Navbar() {
         </ul>
 
         {/* CTA Button */}
-        <button 
+        <button
           onClick={() => handleClick('download')}
           className="hidden md:inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#667eea] to-[#764ba2] text-white font-semibold rounded-full transition-all hover:-translate-y-0.5 hover:shadow-[0_0_60px_rgba(102,126,234,0.5)]"
         >
           {t('nav.download')}
         </button>
+
+        {/* Language Switcher */}
+        <div className="hidden md:block">
+          <LanguageSwitcher currentLocale={currentLocale} />
+        </div>
 
         {/* Mobile Menu Button */}
         <button className="md:hidden text-white text-2xl">
