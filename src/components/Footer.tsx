@@ -21,12 +21,6 @@ export default function Footer() {
             </span>
           </a>
           
-          <p className="text-gray-400 leading-relaxed mb-6">
-            <strong className="text-white">{t('footer.company')}</strong>
-            <br />
-            {t('footer.description')}
-          </p>
-          
           <div className="text-sm text-gray-400 space-y-2 mb-6">
             <p>
               <i className="fas fa-map-marker-alt mr-2 text-[#667eea]"></i>
