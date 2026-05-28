@@ -57,7 +57,7 @@ export default function Download() {
 
               {/* APK Direct Download */}
               <a
-                href="/translator/apk/app-release.apk"
+                href="/apk/app-release.apk"
                 className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white/5 text-white font-semibold rounded-full border border-dashed border-white/20 transition-all hover:bg-white/10 hover:border-[#667eea]"
               >
                 <i className="fas fa-download"></i>
