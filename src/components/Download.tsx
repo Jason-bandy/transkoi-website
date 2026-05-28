@@ -1,9 +1,11 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 export default function Download() {
   const t = useTranslations('TransKoi');
+  const locale = useLocale();
+  const isChinese = locale === 'zh';
 
   return (
     <section className="py-24 px-6 md:px-[5%] bg-[#050810]" id="download">
@@ -34,28 +36,18 @@ export default function Download() {
               </a>
               
               {/* Android Downloads */}
-              <div className="flex gap-4">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.lujiang.transkoi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center gap-3 px-4 py-4 bg-white/5 text-white font-semibold rounded-full border border-white/10 transition-all hover:bg-white/10 hover:border-[#667eea]"
-                >
-                  <i className="fab fa-google-play"></i>
-                  <span>Google Play</span>
-                </a>
+              {isChinese && (
                 <a
                   href="https://sj.qq.com/appdetail/com.lujiang.transkoi"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center gap-3 px-4 py-4 bg-gradient-to-r from-[#3a7ce5] to-[#1a5ae0] text-white font-semibold rounded-full transition-all hover:-translate-y-0.5"
+                  className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-gradient-to-r from-[#3a7ce5] to-[#1a5ae0] text-white font-semibold text-lg rounded-full transition-all hover:-translate-y-1"
                 >
                   <i className="fas fa-mobile-alt"></i>
                   <span>应用宝</span>
                 </a>
-              </div>
+              )}
 
-              {/* APK Direct Download */}
               <a
                 href="/apk/app-release.apk"
                 className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white/5 text-white font-semibold rounded-full border border-dashed border-white/20 transition-all hover:bg-white/10 hover:border-[#667eea]"
