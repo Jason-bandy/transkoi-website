@@ -39,7 +39,7 @@ export default function Download() {
                   href="https://play.google.com/store/apps/details?id=com.lujiang.transkoi"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center gap-3 px-6 py-4 bg-white/5 text-white font-semibold rounded-full border border-white/10 transition-all hover:bg-white/10 hover:border-[#667eea]"
+                  className="flex-1 inline-flex items-center justify-center gap-3 px-4 py-4 bg-white/5 text-white font-semibold rounded-full border border-white/10 transition-all hover:bg-white/10 hover:border-[#667eea]"
                 >
                   <i className="fab fa-google-play"></i>
                   <span>Google Play</span>
@@ -48,12 +48,21 @@ export default function Download() {
                   href="https://sj.qq.com/appdetail/com.lujiang.transkoi"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-[#3a7ce5] to-[#1a5ae0] text-white font-semibold rounded-full transition-all hover:-translate-y-0.5"
+                  className="flex-1 inline-flex items-center justify-center gap-3 px-4 py-4 bg-gradient-to-r from-[#3a7ce5] to-[#1a5ae0] text-white font-semibold rounded-full transition-all hover:-translate-y-0.5"
                 >
                   <i className="fas fa-mobile-alt"></i>
                   <span>应用宝</span>
                 </a>
               </div>
+
+              {/* APK Direct Download */}
+              <a
+                href="/translator/apk/app-release.apk"
+                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white/5 text-white font-semibold rounded-full border border-dashed border-white/20 transition-all hover:bg-white/10 hover:border-[#667eea]"
+              >
+                <i className="fas fa-download"></i>
+                <span>{t('download.apkBtn')}</span>
+              </a>
               
               <p className="text-sm text-gray-500 mt-4">
                 <i className="fas fa-info-circle mr-2"></i>
