@@ -48,7 +48,13 @@ export default function Products() {
           <div className="flex flex-col gap-4">
             {/* iOS Download */}
             <a
-              href="https://apps.apple.com/cn/app/锦鲤翻译/id6746327674"
+              href={
+                locale === 'zh'
+                  ? 'https://apps.apple.com/cn/app/锦鲤翻译/id6746327674'
+                  : locale === 'ja'
+                    ? 'https://apps.apple.com/jp/app/transkoi-锦鯉翻訳/id6746327674'
+                    : 'https://apps.apple.com/us/app/transkoi/id6746327674'
+              }
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-[#667eea] to-[#764ba2] text-white font-semibold rounded-full transition-all hover:-translate-y-0.5 hover:shadow-[0_0_60px_rgba(102,126,234,0.5)]"
