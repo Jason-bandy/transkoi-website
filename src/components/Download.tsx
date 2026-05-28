@@ -26,7 +26,13 @@ export default function Download() {
             <div className="flex flex-col gap-4 max-w-[500px] mx-auto">
               {/* iOS Download */}
               <a
-                href="https://apps.apple.com/cn/app/锦鲤翻译/id6746327674"
+                href={
+                  locale === 'zh'
+                    ? 'https://apps.apple.com/cn/app/锦鲤翻译/id6746327674'
+                    : locale === 'ja'
+                      ? 'https://apps.apple.com/jp/app/transkoi-锦鯉翻訳/id6746327674'
+                      : 'https://apps.apple.com/us/app/transkoi/id6746327674'
+                }
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-gradient-to-r from-[#667eea] to-[#764ba2] text-white font-semibold text-lg rounded-full transition-all hover:-translate-y-1 hover:shadow-[0_0_60px_rgba(102,126,234,0.5)]"
