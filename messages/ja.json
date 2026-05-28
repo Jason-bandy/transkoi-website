@@ -71,7 +71,8 @@
           "音声入出力",
           "翻訳履歴"
         ],
-        "iosBtn": "App Storeでダウンロード"
+        "iosBtn": "App Storeでダウンロード",
+        "apkBtn": "APKダウンロード"
       },
       "luckyPod": {
         "badge": "将来拡張",

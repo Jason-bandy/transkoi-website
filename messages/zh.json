@@ -71,7 +71,8 @@
           "语音输入输出",
           "翻译历史记录"
         ],
-        "iosBtn": "App Store 下载"
+        "iosBtn": "App Store 下载",
+        "apkBtn": "APK 下载"
       },
       "luckyPod": {
         "badge": "未来扩展",

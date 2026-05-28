@@ -1,9 +1,11 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 export default function Products() {
   const t = useTranslations('TransKoi');
+  const locale = useLocale();
+  const isChinese = locale === 'zh';
 
   return (
     <section className="py-24 px-6 md:px-[5%]" id="products">
@@ -66,15 +68,27 @@ export default function Products() {
                 <i className="fab fa-google-play"></i>
                 <span>Google Play</span>
               </a>
-              <a
-                href="https://luckprint.oss-cn-beijing.aliyuncs.com/transkoi/transkoi.1.0.8.apk"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 inline-flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-[#667eea] to-[#764ba2] text-white font-semibold rounded-full transition-all hover:-translate-y-0.5"
-              >
-                <i className="fab fa-android"></i>
-                <span>APK</span>
-              </a>
+              {isChinese ? (
+                <a
+                  href="https://sj.qq.com/appdetail/com.lujiang.transkoi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 inline-flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-[#3a7ce5] to-[#1a5ae0] text-white font-semibold rounded-full transition-all hover:-translate-y-0.5"
+                >
+                  <i className="fas fa-mobile-alt"></i>
+                  <span>应用宝</span>
+                </a>
+              ) : (
+                <a
+                  href="/apk/app-release.apk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 inline-flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-[#667eea] to-[#764ba2] text-white font-semibold rounded-full transition-all hover:-translate-y-0.5"
+                >
+                  <i className="fas fa-download"></i>
+                  <span>{t('products.app.apkBtn')}</span>
+                </a>
+              )}
             </div>
           </div>
         </div>

@@ -71,7 +71,8 @@
           "Voice input & output",
           "Translation history"
         ],
-        "iosBtn": "Download on App Store"
+        "iosBtn": "Download on App Store",
+        "apkBtn": "APK Download"
       },
       "luckyPod": {
         "badge": "Future Expansion",
